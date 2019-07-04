@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function Title() {
   return (
@@ -10,8 +9,8 @@ function Title() {
           text-align: center;
           text-transform: uppercase;
           `}</style>
-    <h1 id="title">Highlander Tap House</h1>
-    <h3 id="subtitle">There can only be one!</h3>
+      <h1 id="title">Highlander Tap House</h1>
+      <h3 id="subtitle">There can only be one!</h3>
     </div>
   );
 }

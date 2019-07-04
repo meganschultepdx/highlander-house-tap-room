@@ -1,5 +1,6 @@
 import React from 'react';
 import Beer from './Beer';
+import Title from './Title';
 
 
 let masterTapList = [

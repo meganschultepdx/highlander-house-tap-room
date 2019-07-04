@@ -1,7 +1,7 @@
 import React from 'react';
-import AddEditKeg from './AddEditKeg';
+import { Link } from 'react-router-dom';
 
-function EmployeeLoginForm(){
+function EmployeeLogin() {
   return (
     <div>
       <style jsx>{`
@@ -34,21 +34,21 @@ function EmployeeLoginForm(){
         }
         `}</style>
       <div id="login-form">
-                <form>
-                    <h1 id="form-title">Employee Login</h1>
-                    <label>Username/email:  </label><br/>
-                    <input
-                        type='text'
-                        id="username" />
-                    <label>Passord:  </label><br/>
-                    <input
-                        type='text'
-                        id="password" />
-                    <button type='submit'><Link to="/addEditKeg">Login</Link></button>
-                </form>
-            </div>
+        <form>
+          <h1 id="form-title">Employee Login</h1>
+          <label>Username/email:  </label><br />
+          <input
+            type='text'
+            id="username" />
+          <label>Passord:  </label><br />
+          <input
+            type='text'
+            id="password" />
+          <button type='submit'><Link to="/addEditKeg">Login</Link></button>
+        </form>
+      </div>
     </div>
   );
 }
 
-export default EmployeeLoginForm;
+export default EmployeeLogin;
