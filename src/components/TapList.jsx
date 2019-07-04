@@ -8,37 +8,43 @@ let masterTapList = [
     name: 'Lambert Lager',
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
-    abv: '5'
+    abv: '5',
+    about: '“this Lager is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'MacLeaod Märzen',
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
-    abv: '5.5'
+    abv: '5.5',
+    about: '“This Marzen is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'Immortal IPA',
     brand: 'Highlander Taigh-grùdaidh',
     price: '6',
-    abv: '6'
+    abv: '6',
+    about: '“ this IPA is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'Ramirez Red',
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
-    abv: '5'
+    abv: '5',
+    about: '“this Red Ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'Kurgan Kölsch',
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
-    abv: '4.5'
+    abv: '4.5',
+    about: '“This Kolsch is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'Princes of the Universe Porter',
     brand: 'Highlander Taigh-grùdaidh',
     price: '6',
-    abv: '5'
+    abv: '5',
+    about: '“This Porter is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   }
 
 ];
@@ -54,6 +60,7 @@ function TapList() {
           brand={beer.brand}
           price={beer.price} 
           abv={beer.abv}
+          about={beer.about}
           key={index}/>
       )}
     </div>

@@ -12,10 +12,10 @@ function Beer(props){
           margin-right: 100px;
         }
         `}</style>
-      <h1 id="beer-name">{props.name}</h1>
+      <h1 id="beer-name">{props.name}  -  ${props.price} per pint</h1>
       <hr/>
+      <h3>{props.about}</h3>
       <h3 id="brand">Brewed by:  {props.brand}</h3>
-      <h3 id="price">${props.price} per pint</h3>
       <h3 id="abv">ABV:  {props.abv}%</h3>
     </div>
   );
