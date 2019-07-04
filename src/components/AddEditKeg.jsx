@@ -3,7 +3,6 @@ import React from 'react';
 function AddEditKeg() {
     return (
         <div>
-            <a name="top"></a>
             <style jsx>{`
 
         #keg-form {

@@ -10,6 +10,13 @@ import { Switch, Route } from 'react-router-dom';
 function App(){
   return (
     <div>
+      <style jsx global>{`
+        body {
+          background-color: #191a19;
+          margin: 0;
+        }
+      `}
+      </style>
       <Navbar/>
       <Switch>
         <Route exact path='/' component={TapList} />

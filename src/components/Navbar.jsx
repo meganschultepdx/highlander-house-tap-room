@@ -6,16 +6,34 @@ function Navbar() {
   return (
     <div>
       <style jsx>{`
-        navbar {
+        #navbar {
           font-family: sans-serif;
-          display: inline
-          text-transform: uppercase;
+          letter-spacing: 1px;
+          display: inline;
+          color: white;
+          width: 100%;
+          background: rgb(7, 71, 7, .7);
+          position: fixed;
+          top: 0;
+          height: 50px;
+        }
+
+      .link {
+        padding: 20px;
+        text-transform: uppercase;
+        color: black;
+      }
+
+      #login {
+        padding-left: 20px;
+      }
 
       `}</style>
-      <div id="navbar">
-        <Link to="/">Home</Link>  |  <Link to="/about">About</Link>  |   <Link to="/employeeLogin">Employee Login</Link>
-
-      </div>
+      <navbar id="navbar">
+        <div className="link">
+        <Link to="/">Home</Link>  |  <Link to="/about">About</Link>  |   <Link id="login" to="/employeeLogin">Employee Login</Link>
+        </div>
+      </navbar>
     </div>
   );
 }
