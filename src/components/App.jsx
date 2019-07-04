@@ -1,13 +1,15 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Home from './Home';
+import TapList from './TapList';
 import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
     <div>
-      <Header/>
-     
+      <Navbar/>
+      <Switch>
+        <Route exact path='/' component={TapList} />
+      </Switch>
     </div>
   );
 }
