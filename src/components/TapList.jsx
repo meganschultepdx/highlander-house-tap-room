@@ -1,36 +1,58 @@
 import React from 'react';
-import Ticket from './Ticket';
+import Beer from './Beer';
 import ouf from '../assets/img/ouf.jpg';
 
 let masterTicketList = [
   {
-    names: 'Thato and Haley',
-    location: '3A',
-    issue: 'Firebase won\'t save record. Halp.'
+    name: 'Lambert Lager',
+    brand: 'Highlander Taigh-grùdaidh',
+    price: '5',
+    abv: '5%'
   },
   {
-    names: 'Sleater and Kinney',
-    location: '4B',
-    issue: 'Fox image not displaying on page, can only see duck?'
+    name: 'MacLeaod Märzen',
+    brand: 'Highlander Taigh-grùdaidh',
+    price: '5',
+    abv: '5.5%'
   },
   {
-    names: 'Imani & Jacob',
-    location: '9F',
-    issue: 'Donkey picture not displaying on hover in Zoology app. :('
+    name: 'Immortal IPA',
+    brand: 'Highlander Taigh-grùdaidh',
+    price: '6',
+    abv: '6%'
+  },
+  {
+    name: 'Ramirez Red',
+    brand: 'Highlander Taigh-grùdaidh',
+    price: '5',
+    abv: '5%'
   }
+  {
+    name: 'Kurgan Kölsch',
+    brand: 'Highlander Taigh-grùdaidh',
+    price: '5',
+    abv: '4.5%'
+  }
+  {
+    name: 'Princes of the Universe Porter',
+    brand: 'Highlander Taigh-grùdaidh',
+    price: '6',
+    abv: '5%'
+  }
+
 ];
 
 
 
-function TicketList() {
+function TapList() {
   return (
     <div>
       <img id="ouf" width="100%" src={ouf}/>
-      <hr/>
-      {masterTicketList.map((ticket, index) =>
-        <Ticket names={ticket.names}
-          location={ticket.location}
-          issue={ticket.issue} 
+      {masterTapList.map((beer, index) =>
+        <Beer name={ticket.name}
+          brand={ticket.brand}
+          price={ticket.price} 
+          abv={ticket.abv}
           key={index}/>
       )}
     </div>
