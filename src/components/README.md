@@ -22,25 +22,17 @@ Below are the current features worked on today and the features that are planned
 
 # Current Features:
 
-* landing page with:
+* home page with:
   - navbar component
-    - click on "Log In "in navbar to route to login page
-  - footer component
+    - click on "Employee Login "in navbar to route to fake employee login page
     - click on "About" in footer to route to about page
-* Navbar, Footer and their links to login and About show on every page or when other components are displayed.
-* styling to match Shudder's styling.
-* Login page has fake login form but 'login" button routes you to collections page
-* Collections page features list of "featured collections" from Firebase Database
-* click on Shudder logo in navbar to return to home/landing page from any other page
-* live Firebase deployment
+    - click on Home to route back home from other pages.
+    - Navbar and its links to show on every "page" or when other components are displayed.
+  - List of Kegs that is a kegList component that holds a hard-coded list of current kegs and uses a child kegs component to display each individual keg.
+* Employee Login page has fake login form but 'login" button routes you to Add/edit keg page.
+* Add/Edit keg component page has form that allows employees to add/edit current kegs.
+* styling with css modules and webpack bundled images
 
-
-# Future Planned Features:
-
-* replace more of the static images with built components 
-* Retrieve and display collection images that are saved in Firebase storage
-* Format data from Firebase to display correctly in columns with images
-* Display Horror101 data from Firebase with images
 
  ## Known Bugs
 
