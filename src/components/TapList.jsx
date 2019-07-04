@@ -1,8 +1,8 @@
 import React from 'react';
 import Beer from './Beer';
-import ouf from '../assets/img/ouf.jpg';
 
-let masterTicketList = [
+
+let masterTapList = [
   {
     name: 'Lambert Lager',
     brand: 'Highlander Taigh-grùdaidh',
@@ -26,13 +26,13 @@ let masterTicketList = [
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
     abv: '5'
-  }
+  },
   {
     name: 'Kurgan Kölsch',
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
     abv: '4.5'
-  }
+  },
   {
     name: 'Princes of the Universe Porter',
     brand: 'Highlander Taigh-grùdaidh',
@@ -47,7 +47,7 @@ let masterTicketList = [
 function TapList() {
   return (
     <div>
-      <img id="ouf" width="100%" src={ouf}/>
+
       {masterTapList.map((beer, index) =>
         <Beer name={beer.name}
           brand={beer.brand}
