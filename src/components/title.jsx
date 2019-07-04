@@ -1,22 +1,35 @@
 import React from 'react';
 import highlanderSign from '../assets/img/highlanderSign.png';
-import pint from '../assets/img/pint.jpg';
+import bar from '../assets/img/bar.jpg';
 
 function Title() {
   return (
     <div>
       <style jsx>{`
-         .flex-container {
-           display: flex;
-         } 
-        
 
+      #parent {
+        position: relative;
+      }
 
-    
-          `}</style>
-      <img id="pint" width="100%" height="auto" src={pint} alt="pint of beer"/>
+      #pint {
+        z-index: -1;
+      } 
+
+      #sign {
+        z-index: 1;
+        position: absolute;
+        top: 18%;
+        left: 25%;
+      }
+
+     
+
+      `}</style>
+      <div id="parent">
+      <img id="bar" width="100%" height="auto" src={bar} alt="bar"/>
       <div className="flex-container">
-      <img id="sign" width="600px" src={highlanderSign} alt="highlander sign"/>
+      <img id="sign" width="60%" src={highlanderSign} alt="highlander sign"/>
+      </div>
      </div>
     </div>
   );

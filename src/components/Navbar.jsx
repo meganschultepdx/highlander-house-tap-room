@@ -16,6 +16,7 @@ function Navbar() {
           position: fixed;
           top: 0;
           height: 50px;
+          z-index: 10;
         }
 
       .link {
@@ -26,6 +27,13 @@ function Navbar() {
 
       #login {
         padding-left: 20px;
+      }
+
+      a {
+        color: #FFF;
+      }
+      a:hover {
+         color: #00F
       }
 
       `}</style>
