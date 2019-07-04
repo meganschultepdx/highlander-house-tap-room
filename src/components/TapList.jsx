@@ -1,6 +1,7 @@
 import React from 'react';
 import Beer from './Beer';
 import Title from './Title';
+import wood from '../assets/img/wood.jpg';
 
 
 let masterTapList = [
@@ -9,35 +10,35 @@ let masterTapList = [
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
     abv: '5',
-    about: '“this Lager is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    about: 'this Lager is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'MacLeaod Märzen',
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
     abv: '5.5',
-    about: '“This Marzen is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    about: 'This Marzen is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'Immortal IPA',
     brand: 'Highlander Taigh-grùdaidh',
     price: '6',
     abv: '6',
-    about: '“ this IPA is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    about: 'this IPA is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'Ramirez Red',
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
     abv: '5',
-    about: '“this Red Ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    about: 'this Red Ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'Kurgan Kölsch',
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
     abv: '4.5',
-    about: '“This Kolsch is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+    about: 'This Kolsch is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'Princes of the Universe Porter',
@@ -52,6 +53,15 @@ let masterTapList = [
 function TapList() {
   return (
     <div>
+      <style jsx>{`
+        body {
+          background-image: url(${wood});
+          background-size: cover;
+          background-repeat: repeat;
+        } 
+        `}
+        </style>
+
       <Title/>
       <style jsx>{`
         #taptitle {
