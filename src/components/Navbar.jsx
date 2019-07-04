@@ -13,7 +13,7 @@ function Navbar() {
 
       `}</style>
       <div id="navbar">
-        <Link to="/">Home</Link>  |  <Link to="/about">About</Link>  |   <Link to="/employleeLogin">Employee Login</Link>
+        <Link to="/">Home</Link>  |  <Link to="/about">About</Link>  |   <Link to="/employeeLogin">Employee Login</Link>
 
       </div>
     </div>

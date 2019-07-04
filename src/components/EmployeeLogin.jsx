@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 function EmployeeLogin() {
   return (
     <div>
+      
       <style jsx>{`
         #login-form {
             font-family: sans-serif;
@@ -33,6 +34,8 @@ function EmployeeLogin() {
             border-radius: 4px;
         }
         `}</style>
+        
+        <h1>this comp works</h1>
       <div id="login-form">
         <form>
           <h1 id="form-title">Employee Login</h1>
