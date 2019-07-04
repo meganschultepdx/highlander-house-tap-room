@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import TapList from './TapList';
 import EmployeeLoginForm from './EmployeeLoginForm';
-import NewKegForm from './NewKegForm';
+import AddEditKeg from './AddEditKeg';
 import { Switch, Route } from 'react-router-dom';
 
 function App(){
@@ -12,7 +12,7 @@ function App(){
       <Switch>
         <Route exact path='/' component={TapList} />
         <Route path='/employeeLogin' component={EmployeeLoginForm} />
-        <Route path='/newKegForm' component={NewKegForm} />
+        <Route path='/AddEditKeg' component={AddEditKeg} />
         <Route path='/about' component={About} />
       </Switch>
     </div>

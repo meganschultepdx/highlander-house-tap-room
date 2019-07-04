@@ -1,4 +1,5 @@
 import React from 'react';
+import AddEditKeg from './AddEditKeg';
 
 function EmployeeLoginForm(){
   return (
@@ -43,7 +44,7 @@ function EmployeeLoginForm(){
                     <input
                         type='text'
                         id="password" />
-                    <button type='submit'>Search</button>
+                    <button type='submit'><Link to="/addEditKeg">Login</Link></button>
                 </form>
             </div>
     </div>
