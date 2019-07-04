@@ -14,7 +14,7 @@
 
 ## Component Tree/Project Planning
 
-![](src/assets/images/comptree.jpg)
+![](src/assets/img/comptree.jpg)
 
 ## Features
 
