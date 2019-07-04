@@ -12,7 +12,7 @@ function App(){
     <div>
       <style jsx global>{`
         body {
-          background-color: #191a19;
+          background-color: black;
           margin: 0;
         }
       `}

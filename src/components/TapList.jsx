@@ -53,6 +53,18 @@ function TapList() {
   return (
     <div>
       <Title/>
+      <style jsx>{`
+        #taptitle {
+          color: white;
+          font-family: sans-serif;
+          font-weight: lighter;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 2em;
+        }
+        `}
+        </style>
+      <h1 id="taptitle">The beers we currently have on Tap:</h1>
       {masterTapList.map((beer, index) =>
         <Beer name={beer.name}
           brand={beer.brand}
