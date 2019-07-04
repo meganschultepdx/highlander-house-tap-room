@@ -54,6 +54,7 @@ let masterTapList = [
 function TapList() {
   return (
     <div>
+      <a name="top"></a>
       <Title/>
       {masterTapList.map((beer, index) =>
         <Beer name={beer.name}
