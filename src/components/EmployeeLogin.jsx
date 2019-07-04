@@ -9,7 +9,7 @@ function EmployeeLogin() {
         #login-form {
             font-family: sans-serif;
             width: 300px;
-            border: 2px solid white;
+            border: 2px solid darkgrey;
             background-color: white;
             border-radius: 8px;
             z-index: 1;
@@ -34,19 +34,18 @@ function EmployeeLogin() {
             border-radius: 4px;
         }
         `}</style>
-        
-        <h1>this comp works</h1>
+
       <div id="login-form">
         <form>
           <h1 id="form-title">Employee Login</h1>
           <label>Username/email:  </label><br />
           <input
             type='text'
-            id="username" />
+            id="username" /><br />
           <label>Passord:  </label><br />
           <input
             type='text'
-            id="password" />
+            id="password" /><br />
           <button type='submit'><Link to="/addEditKeg">Login</Link></button>
         </form>
       </div>
