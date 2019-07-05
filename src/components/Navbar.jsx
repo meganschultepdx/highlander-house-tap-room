@@ -10,7 +10,6 @@ function Navbar() {
           font-family: sans-serif;
           letter-spacing: 1px;
           display: inline;
-          color: white;
           width: 100%;
           background: rgb(7, 71, 7, .7);
           position: fixed;

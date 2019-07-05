@@ -54,27 +54,34 @@ function TapList() {
   return (
     <div>
       <style jsx>{`
-        body {
+        #woodbackground {
           background-image: url(${wood});
           background-size: cover;
           background-repeat: repeat;
         } 
-        `}
-        </style>
 
-      <Title/>
-      <style jsx>{`
         #taptitle {
-          color: white;
+          color: #947a04;
           font-family: sans-serif;
           font-weight: lighter;
           text-transform: uppercase;
           text-align: center;
           font-size: 2em;
         }
+
+        #top-spacer {
+          height: 20px;
+        }
+
+        #spacer {
+          padding-top: 70px;
+        }
         `}
         </style>
+        <Title/>
       <h1 id="taptitle">The beers we currently have on Tap:</h1>
+        <div id="woodbackground">
+          <div id="top-spacer"></div>
       {masterTapList.map((beer, index) =>
         <Beer name={beer.name}
           brand={beer.brand}
@@ -83,6 +90,8 @@ function TapList() {
           about={beer.about}
           key={index}/>
       )}
+      <div id="spacer"></div>
+      </div>
     </div>
   );
 }

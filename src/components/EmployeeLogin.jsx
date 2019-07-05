@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import wood from '../assets/img/wood.jpg';
 
 function EmployeeLogin() {
   return (
@@ -33,7 +34,7 @@ function EmployeeLogin() {
             border-radius: 4px;
         }
         `}</style>
-
+  
       <div id="login-form">
       
         <form>
