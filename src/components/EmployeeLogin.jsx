@@ -16,6 +16,9 @@ function EmployeeLogin() {
             top: 20%;
             position: absolute;
             margin-left: 10vw;
+            margin-top: 50px;
+            text-align: center;
+            margin-left: 36%;
         }
 
         #form-title {
@@ -33,10 +36,24 @@ function EmployeeLogin() {
             background-color: lightgrey;
             border-radius: 4px;
         }
+
+        #loginTitle {
+          font-family: sans-serif;
+          text-align: center;
+          color: grey;
+          padding-top: 100px;
+        }
+
+        #loginButton {
+          padding: 10px 20px;
+          margin-bottom: 20px;
+          border-radius: 4px;
+          background-color: grey;
+        }
         `}</style>
-  
+
+      <h1 id="loginTitle">Employees must log in to add or edit kegs.</h1>
       <div id="login-form">
-      
         <form>
           <h1 id="form-title">Employee Login</h1>
           <label>Username/email:  </label><br />
@@ -47,7 +64,7 @@ function EmployeeLogin() {
           <input
             type='text'
             id="password" /><br />
-          <button type='submit'><Link to="/addEditKeg">Login</Link></button>
+          <button id="loginButton" type='submit'><Link to="/addEditKeg">Login</Link></button>
         </form>
       </div>
     </div>
