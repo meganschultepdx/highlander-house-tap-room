@@ -14,17 +14,18 @@ function Beer(props) {
         .list {
           text-align: left;
           background-color: black;
-          border: solid 1px rgb(89, 92, 90, .4);
-          background-color: rgb(89, 92, 90, .4);
+          border: solid 1px rgb(89, 92, 90, .5);
+          background-color: rgb(89, 92, 90, .5);
           border-radius: 4px;
           width: 50%;
           height: auto;
           width: 2fr;
           margin-left: 25%;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
         }
 
         #beer-name {
+          text-transform: uppercase;
           font-weight: lighter;
           color: #bda30b;
           font-size: 1.5em;

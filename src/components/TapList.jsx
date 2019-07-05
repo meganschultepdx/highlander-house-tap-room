@@ -67,6 +67,7 @@ function TapList() {
           text-transform: uppercase;
           text-align: center;
           font-size: 2em;
+          text-transform: uppercase;
         }
 
         #top-spacer {

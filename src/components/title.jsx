@@ -19,7 +19,7 @@ function Title() {
         z-index: 1;
         position: absolute;
         top: 18%;
-        left: 25%;
+        left: 21%;
       }
 
      
