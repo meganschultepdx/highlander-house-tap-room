@@ -47,23 +47,20 @@ function Beer(props) {
         
         `}</style>
 
-        <div className="flex-container">
-          <div id="list"></div>
-          <div className="list">
-            <h1 id="beer-name" className="flip" onclick="myFunction()">{props.name}  -  ${props.price} per pint</h1>
-            <div id="info-box">
-              <h3>{props.about}</h3>
-              <h3 id="brand"><b>Brewed by:  </b> {props.brand}</h3>
-              <h3 id="abv"><b>ABV:  </b>{props.abv}%</h3>
-            </div>
+      <div className="flex-container">
+        <div id="list"></div>
+        <div className="list">
+          <h1 id="beer-name">{props.name}  -  ${props.price} per pint</h1>
+          <div id="info-box">
+            <h3>{props.about}</h3>
+            <h3 id="brand"><b>Brewed by:  </b> {props.brand}</h3>
+            <h3 id="abv"><b>ABV:  </b>{props.abv}%</h3>
           </div>
+        </div>
       </div>
     </div>
   );
 
-  function myFunction() {
-    document.getElementById("panel").style.display = "block";
-  }
 }
 
 Beer.propTypes = {
@@ -71,7 +68,7 @@ Beer.propTypes = {
   brand: PropTypes.string,
   price: PropTypes.number,
   abv: PropTypes.number,
-  about: PropTypes.text
+  about: PropTypes.string
 };
 
 export default Beer;

@@ -1,5 +1,4 @@
 import React from 'react';
-import highlanderSign from '../assets/img/highlanderSign.png';
 import guyPouringBeer from '../assets/img/guyPouringBeer.jpg';
 
 function Title() {
@@ -37,24 +36,22 @@ function Title() {
         font-size: 1.5em;
       }
 
-     
-
       `}</style>
       <div id="parent">
-      <img id="beerPour" width="100%" height="auto" src={guyPouringBeer} alt="guy pouring beer"/>
-      <div className="flex-container">
-        <div id="info">
-      <h2 className="infoTitle">Location: </h2>
-      <h3 className="info">558 Willoway Lane<br />
+        <img id="beerPour" width="100%" height="auto" src={guyPouringBeer} alt="guy pouring beer"/>
+        <div className="flex-container">
+          <div id="info">
+            <h2 className="infoTitle">Location: </h2>
+            <h3 className="info">558 Willoway Lane<br />
       Andersonville, WA 99881</h3>
-      <h2 className="infoTitle">Hours: </h2>
-      <h3 className="info">Thursday - Sunday: 11am - 2am<br />
+            <h2 className="infoTitle">Hours: </h2>
+            <h3 className="info">Thursday - Sunday: 11am - 2am<br />
       Monday - Wednesday: 4pm - 11pm</h3>
-      <h2 className="infoTitle">Phone: </h2>
-      <h3 className="info">(999)881-beer</h3>
+            <h2 className="infoTitle">Phone: </h2>
+            <h3 className="info">(999)881-beer</h3>
+          </div>
+        </div>
       </div>
-      </div>
-     </div>
     </div>
   );
 }

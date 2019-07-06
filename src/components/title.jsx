@@ -26,11 +26,11 @@ function Title() {
 
       `}</style>
       <div id="parent">
-      <img id="bar" width="100%" height="auto" src={bar} alt="bar"/>
-      <div className="flex-container">
-      <img id="sign" width="60%" src={highlanderSign} alt="highlander sign"/>
+        <img id="bar" width="100%" height="auto" src={bar} alt="bar"/>
+        <div className="flex-container">
+          <img id="sign" width="60%" src={highlanderSign} alt="highlander sign"/>
+        </div>
       </div>
-     </div>
     </div>
   );
 }

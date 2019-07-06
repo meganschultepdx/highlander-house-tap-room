@@ -4,8 +4,14 @@ import wood from '../assets/img/wood.jpg';
 
 function EmployeeLogin() {
   return (
-    <div>
+    <div id="loginBackground">
       <style jsx>{`
+        #loginBackground {
+          background-image: url(${wood});
+          background-size: cover;
+          background-repeat: repeat;
+        } 
+
         #login-form {
             font-family: sans-serif;
             width: 300px;
@@ -42,6 +48,7 @@ function EmployeeLogin() {
           text-align: center;
           color: grey;
           padding-top: 100px;
+          padding-bottom: 100%;
         }
 
         #loginButton {
@@ -52,21 +59,21 @@ function EmployeeLogin() {
         }
         `}</style>
 
-      <h1 id="loginTitle">Employees must log in to add or edit kegs.</h1>
-      <div id="login-form">
-        <form>
-          <h1 id="form-title">Employee Login</h1>
-          <label>Username/email:  </label><br />
-          <input
-            type='text'
-            id="username" /><br />
-          <label>Passord:  </label><br />
-          <input
-            type='text'
-            id="password" /><br />
-          <button id="loginButton" type='submit'><Link to="/addEditKeg">Login</Link></button>
-        </form>
-      </div>
+        <h1 id="loginTitle">Employees must log in to add or edit kegs.</h1>
+        <div id="login-form">
+          <form>
+            <h1 id="form-title">Employee Login</h1>
+            <label>Username/email:  </label><br />
+            <input
+              type='text'
+              id="username" /><br />
+            <label>Passord:  </label><br />
+            <input
+              type='text'
+              id="password" /><br />
+            <button id="loginButton" type='submit'><Link to="/addEditKeg">Login</Link></button>
+          </form>
+        </div>
     </div>
   );
 }
