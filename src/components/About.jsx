@@ -1,4 +1,5 @@
 import React from 'react';
+import barshot from '../assets/img/barshot.jpg';
 
 function About() {
   return (
@@ -11,6 +12,8 @@ function About() {
           font-weight: lighter;
           padding-top: 50px;
           width: 70%;
+          margin-left: auto;
+          margin-right: auto;
         }
           `}</style>
     <div id="about">
@@ -18,6 +21,7 @@ function About() {
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     </p>
+    <img id="barshot" width="100%" height="auto" src={barshot} alt="bar"/>
     </div>
     </div>
   );
