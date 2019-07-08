@@ -28,6 +28,13 @@ let masterTapList = [
     about: 'this IPA is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
+    name: 'Stab to the Heart Stout',
+    brand: 'Highlander Taigh-grùdaidh',
+    price: '6',
+    abv: '4.8',
+    about: 'this stout is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+  },
+  {
     name: 'Ramirez Red',
     brand: 'Highlander Taigh-grùdaidh',
     price: '5',
@@ -40,6 +47,13 @@ let masterTapList = [
     price: '5',
     abv: '4.5',
     about: 'This Kolsch is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+  },
+  {
+    name: 'Quickening Quince Sour',
+    brand: 'Highlander Taigh-grùdaidh',
+    price: '5',
+    abv: '5.5',
+    about: 'this sour ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   },
   {
     name: 'Princes of the Universe Porter',
@@ -90,7 +104,7 @@ function TapList() {
         }
         `}
       </style>
-      <Title/>
+      <Title />
       <h1 id="taptitle">Welcome!</h1><br />
       <h2 id="tapSubtitle">Here are the beers we currently have on tap:</h2>
       <div id="woodbackground">
@@ -98,12 +112,12 @@ function TapList() {
         {masterTapList.map((beer, index) =>
           <Beer name={beer.name}
             brand={beer.brand}
-            price={beer.price} 
+            price={beer.price}
             abv={beer.abv}
             about={beer.about}
-            key={index}/>
+            key={index} />
         )}
-        <Info/>
+        <Info />
         <div id="spacer"></div>
       </div>
     </div>

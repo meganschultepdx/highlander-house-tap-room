@@ -6,6 +6,7 @@ import AddEditKeg from './AddEditKeg';
 import About from './About';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
+import Error404 from './Error404';
 
 function App(){
   return (
@@ -23,6 +24,7 @@ function App(){
         <Route path='/employeeLogin' component={EmployeeLogin} />
         <Route path='/addEditKeg' component={AddEditKeg} />
         <Route path='/about' component={About} />
+        <Route component={Error404} />
       </Switch>
       <Footer/>
     </div>

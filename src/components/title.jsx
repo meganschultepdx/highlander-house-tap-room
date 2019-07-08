@@ -3,6 +3,7 @@ import highlanderSign from '../assets/img/highlanderSign.png';
 import bar from '../assets/img/bar.jpg';
 
 function Title() {
+
   return (
     <div>
       <style jsx>{`
@@ -22,13 +23,11 @@ function Title() {
         left: 21%;
       }
 
-     
-
       `}</style>
       <div id="parent">
-        <img id="bar" width="100%" height="auto" src={bar} alt="bar"/>
+        <img id="bar" width="100%" height="auto" src={bar} alt="bar" />
         <div className="flex-container">
-          <img id="sign" width="60%" src={highlanderSign} alt="highlander sign"/>
+          <img id="sign" width="60%" src={highlanderSign} alt="highlander sign" />
         </div>
       </div>
     </div>

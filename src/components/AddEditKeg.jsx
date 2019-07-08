@@ -88,7 +88,7 @@ function AddEditKeg() {
         <h1 id="employeePageTitle">Employee Page</h1>
         <div id="keg-form">
           <form>
-              <h1 id="form-title">Add or Edit a keg:  </h1>
+            <h1 id="form-title">Add or Edit a keg:  </h1>
             <div id="keg-input">
               <label>Name of Beer:  </label>
               <input
