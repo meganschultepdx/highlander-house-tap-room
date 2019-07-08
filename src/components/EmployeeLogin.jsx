@@ -16,10 +16,10 @@ function EmployeeLogin() {
             font-family: sans-serif;
             width: 300px;
             border: 2px solid rgb(255, 255, 255, 0);
-            background-color: rgb(255, 255, 255, .4);;
+            background-color: rgb(255, 255, 255, .4);
             border-radius: 8px;
             z-index: 1;
-            top: 20%;
+            top: 22%;
             position: absolute;
             margin-top: 50px;
             text-align: center;

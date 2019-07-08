@@ -7,8 +7,6 @@ function Navbar() {
     <div>
       <style jsx>{`
         #navbar {
-          font-family: sans-serif;
-          letter-spacing: 1px;
           display: inline;
           width: 100%;
           background: rgb(7, 71, 7, .7);
@@ -18,37 +16,34 @@ function Navbar() {
           z-index: 10;
         }
 
-      .flex-container {
-        display: flex;
-      }
+        .flex-container {
+          display: flex;
+        }
 
-      .link {
-        padding: 20px;
-        text-transform: uppercase;
-        color: black;
-      }
+        .link {
+          padding: 20px;
+          text-transform: uppercase;
+          color: darkgrey;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+          justify-contents: space-evenly;
+        }
 
-      #login {
-        padding-left: 20px;
-        justify-contents: right;
-      }
+        .link:hover {
+          color: #00F
+        }
 
-      a {
-        color: #FFF;
-      }
-      a:hover {
-         color: #00F
-      }
-
-      a:-webkit-any-link {
-        color: black;
-      }
+        #login-link {
+          padding-right: 20px;
+          display: react;
+          justify-contents: right;
+        }
 
       `}</style>
       <navbar id="navbar">
         <div className="flex-container">
           <div className="link">
-            <Link to="/">Home</Link>  |  <Link to="/about">About</Link>  |   <Link to="/contact">Contact Us</Link>   |   <Link id="login" to="/employeeLogin">Employee Login</Link>
+            <Link id="homeLink" to="/">Home</Link>  |  <Link id="aboutLink" to="/about">About</Link>  |   <Link id="contactLink" to="/contact">Contact Us</Link>   |   <Link id="login-link" to="/employeeLogin">Employee Login</Link>
           </div>
         </div>
       </navbar>
