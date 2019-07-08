@@ -4,6 +4,7 @@ import TapList from './TapList';
 import EmployeeLogin from './EmployeeLogin';
 import AddEditKeg from './AddEditKeg';
 import About from './About';
+import Contact from './Contact';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
@@ -24,6 +25,7 @@ function App(){
         <Route path='/employeeLogin' component={EmployeeLogin} />
         <Route path='/addEditKeg' component={AddEditKeg} />
         <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
         <Route component={Error404} />
       </Switch>
       <Footer/>

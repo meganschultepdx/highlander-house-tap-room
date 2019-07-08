@@ -48,7 +48,7 @@ function Navbar() {
       <navbar id="navbar">
         <div className="flex-container">
           <div className="link">
-            <Link to="/">Home</Link>  |  <Link to="/about">About</Link>  |   <Link id="login" to="/employeeLogin">Employee Login</Link>
+            <Link to="/">Home</Link>  |  <Link to="/about">About</Link>  |   <Link to="/contact">Contact Us</Link>   |   <Link id="login" to="/employeeLogin">Employee Login</Link>
           </div>
         </div>
       </navbar>

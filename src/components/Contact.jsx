@@ -1,20 +1,20 @@
 import React from 'react';
-import guyPouringBeer from '../assets/img/guyPouringBeer.jpg';
+import pint from '../assets/img/pint.jpg';
 
-function Info() {
+function Contact() {
   return (
     <div>
       <style jsx>{`
-
+     
       #parent {
         position: relative;
         margin-top: 40px;
       }
  
-      #info {
+      #contact {
         z-index: 1;
         position: absolute;
-        top: 5%;
+        top: 10%;
         left: 5%;
         color: lightgrey;
         font-family: sans-serif;
@@ -24,13 +24,13 @@ function Info() {
         padding: 30px;
       }
 
-      .infoTitle {
+      .contactTitle {
         text-transform: uppercase;
         font-weight: lighter;
         font-size: 2em;
       }
 
-      .info {
+      .contact {
         font-weight: lighter;
         padding-left: 20px;
         font-size: 1.5em;
@@ -38,17 +38,16 @@ function Info() {
 
       `}</style>
       <div id="parent">
-        <img id="beerPour" width="100%" height="auto" src={guyPouringBeer} alt="guy pouring beer"/>
+        <img id="pint" width="100%" height="auto" src={pint} alt="pint of beer" />
         <div className="flex-container">
-          <div id="info">
-            <h2 className="infoTitle">Location: </h2>
-            <h3 className="info">558 Willoway Lane<br />
-      Andersonville, WA 99881</h3>
-            <h2 className="infoTitle">Hours: </h2>
-            <h3 className="info">Thursday - Sunday: 11am - 2am<br />
-      Monday - Wednesday: 4pm - 11pm</h3>
-            <h2 className="infoTitle">Phone: </h2>
-            <h3 className="info">(999)881-beer</h3>
+          <div id="contact">
+            <h2 className="contactTitle">Phone: </h2>
+            <h3 className="contact">(999)881-beer</h3>
+            <h2 className="contactTitle">Hours: </h2>
+            <h3 className="contact">Thursday - Sunday: 11am - 2am<br />
+              Monday - Wednesday: 4pm - 11pm</h3>
+            <h2 className="contactTitle">Email: </h2>
+            <h3 className="contact">info@highlandertaphouse.com</h3>
           </div>
         </div>
       </div>
@@ -56,4 +55,4 @@ function Info() {
   );
 }
 
-export default Info;
+export default Contact;

@@ -17,7 +17,7 @@ function About() {
         }
 
         #aboutTitle {
-          font-weight: lighter: 
+          font-weight: lighter:
         }
 
         #castle {
