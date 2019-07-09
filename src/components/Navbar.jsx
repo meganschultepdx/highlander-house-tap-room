@@ -43,7 +43,7 @@ function Navbar() {
       <navbar id="navbar">
         <div className="flex-container">
           <div className="link">
-            <Link id="homeLink" to="/">Home</Link>  |  <Link id="aboutLink" to="/about">About</Link>  |   <Link id="contactLink" to="/contact">Contact Us</Link>   |   <Link id="login-link" to="/employeeLogin">Employee Login</Link>
+            <Link style={{ color: 'black'}} id="homeLink"  to="/">Home</Link>  |  <Link style={{ color: 'black'}} id="aboutLink"  to="/about">About</Link>  |   <Link style={{ color: 'black'}} id="contactLink"  to="/contact">Contact Us</Link>   |   <Link style={{ color: 'black'}} id="login-link"  to="/employeeLogin">Employee Login</Link>
           </div>
         </div>
       </navbar>
