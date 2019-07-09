@@ -9,7 +9,7 @@ function Navbar() {
         #navbar {
           display: inline;
           width: 100%;
-          background: rgb(7, 71, 7, .7);
+          background: rgb(7, 55, 7, .7);
           position: fixed;
           top: 0;
           height: 50px;
