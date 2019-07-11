@@ -11,7 +11,7 @@ function Footer() {
           display: inline;
           text-align: center;
           width: 100%;
-          background: rgb(7, 71, 7, .7);
+          background: rgb(7, 55, 7, .7);
           position: fixed;
           bottom: 0;
           height: 60px;

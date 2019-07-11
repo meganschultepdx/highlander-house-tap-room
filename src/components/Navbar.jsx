@@ -9,7 +9,7 @@ function Navbar() {
         #navbar {
           display: inline;
           width: 100%;
-          background: rgb(7, 71, 7, .7);
+          background: rgb(7, 55, 7, .7);
           position: fixed;
           top: 0;
           height: 50px;
@@ -43,7 +43,7 @@ function Navbar() {
       <navbar id="navbar">
         <div className="flex-container">
           <div className="link">
-            <Link id="homeLink" to="/">Home</Link>  |  <Link id="aboutLink" to="/about">About</Link>  |   <Link id="contactLink" to="/contact">Contact Us</Link>   |   <Link id="login-link" to="/employeeLogin">Employee Login</Link>
+          <Link style={{ color: 'darkgrey'}} id="homeLink"  to="/">Home</Link>  |  <Link style={{ color: 'darkgrey'}} id="aboutLink"  to="/about">About</Link>  |   <Link style={{ color: 'darkgrey'}} id="contactLink"  to="/contact">Contact Us</Link>   |   <Link style={{ color: 'darkgrey'}} id="login-link"  to="/employeeLogin">Employee Login</Link>
           </div>
         </div>
       </navbar>

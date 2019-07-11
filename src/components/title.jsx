@@ -1,5 +1,5 @@
 import React from 'react';
-import highlanderSign from '../assets/img/highlanderSign.png';
+import newlogosign from '../assets/img/newlogosign.png';
 import bar from '../assets/img/bar.jpg';
 
 function Title() {
@@ -19,7 +19,7 @@ function Title() {
       #sign {
         z-index: 1;
         position: absolute;
-        top: 18%;
+        top: 15%;
         left: 21%;
       }
 
@@ -27,7 +27,7 @@ function Title() {
       <div id="parent">
         <img id="bar" width="100%" height="auto" src={bar} alt="bar" />
         <div className="flex-container">
-          <img id="sign" width="60%" src={highlanderSign} alt="highlander sign" />
+          <img id="sign" width="60%" src={newlogosign} alt="highlander sign" />
         </div>
       </div>
     </div>
