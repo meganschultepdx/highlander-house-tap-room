@@ -1,9 +1,10 @@
 import React from 'react';
-import Beer from './Beer';
+import keg from './keg';
 import Title from './Title';
 import wood from '../assets/img/wood.jpg';
 import Info from './Info';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function TapList(props) {
   return (
@@ -46,16 +47,16 @@ function TapList(props) {
       </style>
       <Title />
       <h1 id="taptitle">Welcome!</h1><br />
-      <h2 id="tapSubtitle">Here are the beers we currently have on tap:</h2>
+      <h2 id="tapSubtitle">Here are the kegs we currently have on tap:</h2>
       <div id="woodbackground">
         <div id="top-spacer"></div>
-        {props.tapList.map((beer, index) =>
-          <Beer name={beer.name}
-            brewery={beer.brewery}
-            price={beer.price}
-            abv={beer.abv}
-            about={beer.about}
-            key={index} />
+        {props.tapList.map((keg, index) =>
+          <keg name={keg.name}
+            brewery={keg.brewery}
+            price={keg.price}
+            abv={keg.abv}
+            about={keg.about}
+            key={keg.id} />
         )}
         <Info />
         <div id="spacer"></div>

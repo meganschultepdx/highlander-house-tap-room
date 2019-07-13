@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Beer(props) {
+function Keg(props) {
   return (
     <div>
       <style jsx>{`
@@ -24,7 +24,7 @@ function Beer(props) {
           margin-bottom: 20px;
         }
 
-        #beer-name {
+        #keg-name {
           text-transform: uppercase;
           font-weight: lighter;
           color: #bda30b;
@@ -50,7 +50,7 @@ function Beer(props) {
       <div className="flex-container">
         <div id="list"></div>
         <div className="list">
-          <h1 id="beer-name">{props.name}  -  ${props.price} per pint</h1>
+          <h1 id="keg-name">{props.name}  -  ${props.price} per pint</h1>
           <div id="info-box">
             <h3>{props.about}</h3>
             <h3 id="brewery"><b>Brewed by:  </b> {props.brewery}</h3>
@@ -63,7 +63,7 @@ function Beer(props) {
 
 }
 
-Beer.propTypes = {
+Keg.propTypes = {
   name: PropTypes.string,
   brewery: PropTypes.string,
   price: PropTypes.number,
@@ -71,4 +71,4 @@ Beer.propTypes = {
   about: PropTypes.string
 };
 
-export default Beer;
+export default Keg;
