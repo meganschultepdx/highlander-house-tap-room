@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar';
 import TapList from './TapList';
-import EmployeeLogin from './EmployeeLogin';
-import AddEditKeg from './AddEditKeg';
+import EmployeeLoginControl from './EmployeeLoginControl';
+import EmployeePage from './EmployeePage';
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -22,8 +22,8 @@ function App(){
       <Navbar/>
       <Switch>
         <Route exact path='/' component={TapList} />
-        <Route path='/employeeLogin' component={EmployeeLogin} />
-        <Route path='/addEditKeg' component={AddEditKeg} />
+        <Route path='/employeeLogin' component={EmployeeLoginControl} />
+        <Route path='/employeePage' component={EmployeePage} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
         <Route component={Error404} />

@@ -80,7 +80,7 @@ function EmployeeLogin() {
             <input required
               type='text'
               id="password" /><br />
-            <button id="loginButton" type='submit'><Link to="/addEditKeg">Login</Link></button>
+            <button id="loginButton" type='submit'><Link to="/EmployeePage">Login</Link></button>
           </form>
         </div>
       </div>

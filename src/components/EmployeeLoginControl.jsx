@@ -6,13 +6,20 @@ class EmployeeLoginControl extends React.Component {
     super(props);
     this.state = {
       employeePageVisible: false
-    }
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState({employeePageVisible: true});
+    console.log('employeePageVisible is currently set to:' + this.state.employeePageVisible);
   }
 
   render(){
     return (
       <div>
-        <p>This is the EmployeeLoginControl component!</p>
+        <p style={{color: 'white', paddingTop: '100px'}}>This is the EmployeeLoginControl component!</p>
+        <strong style={{color: 'white', paddingTop: '100px'}} onClick={this.handleClick}> Click me to change my state!</strong>
       </div>
     );
   }

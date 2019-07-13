@@ -2,7 +2,7 @@ import React from 'react';
 import wood from '../assets/img/wood.jpg';
 
 
-function employeePage() {
+function EmployeePage() {
   return (
     <div id="employeeBackground">
       <style jsx>{`
@@ -126,4 +126,4 @@ function employeePage() {
   );
 }
 
-export default AddEditKeg;
+export default EmployeePage;
