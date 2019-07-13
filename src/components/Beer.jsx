@@ -53,7 +53,7 @@ function Beer(props) {
           <h1 id="beer-name">{props.name}  -  ${props.price} per pint</h1>
           <div id="info-box">
             <h3>{props.about}</h3>
-            <h3 id="brand"><b>Brewed by:  </b> {props.brand}</h3>
+            <h3 id="brewery"><b>Brewed by:  </b> {props.brewery}</h3>
             <h3 id="abv"><b>ABV:  </b>{props.abv}%</h3>
           </div>
         </div>
@@ -65,7 +65,7 @@ function Beer(props) {
 
 Beer.propTypes = {
   name: PropTypes.string,
-  brand: PropTypes.string,
+  brewery: PropTypes.string,
   price: PropTypes.number,
   abv: PropTypes.number,
   about: PropTypes.string

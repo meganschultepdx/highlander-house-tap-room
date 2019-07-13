@@ -41,6 +41,6 @@ function EmployeePage(props) {
 
 EmployeePage.propTypes= {
   onNewKegCreation: PropTypes.func
-}
+};
 
 export default EmployeePage;

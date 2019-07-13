@@ -3,8 +3,9 @@ import Beer from './Beer';
 import Title from './Title';
 import wood from '../assets/img/wood.jpg';
 import Info from './Info';
+import PropTypes from 'prop-types';
 
-function TapList() {
+function TapList(props) {
   return (
     <div>
       <style jsx>{`
@@ -48,9 +49,9 @@ function TapList() {
       <h2 id="tapSubtitle">Here are the beers we currently have on tap:</h2>
       <div id="woodbackground">
         <div id="top-spacer"></div>
-        {masterTapList.map((beer, index) =>
+        {props.tapList.map((beer, index) =>
           <Beer name={beer.name}
-            brand={beer.brand}
+            brewery={beer.brewery}
             price={beer.price}
             abv={beer.abv}
             about={beer.about}
@@ -62,5 +63,9 @@ function TapList() {
     </div>
   );
 }
+
+TapList.propTypes = {
+  tapList: PropTypes.array
+};
 
 export default TapList;

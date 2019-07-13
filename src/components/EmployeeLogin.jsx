@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import wood from '../assets/img/wood.jpg';
 import PropTypes from 'prop-types';
 
@@ -91,6 +90,6 @@ function EmployeeLogin(props) {
 
 EmployeeLogin.propTypes = {
   onEmployeeLoginSubmit: PropTypes.func
-}
+};
 
 export default EmployeeLogin;

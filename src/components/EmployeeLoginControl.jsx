@@ -1,7 +1,7 @@
 import React from 'react';
 import EmployeeLogin from './EmployeeLogin';
 import EmployeePage from './EmployeePage';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 class EmployeeLoginControl extends React.Component {
 
@@ -20,7 +20,7 @@ class EmployeeLoginControl extends React.Component {
   render(){
     let pageDisplay = null;
     if (this.state.employeePageVisible){
-      pageDisplay = <EmployeePage onNewKegCreaetion={this.props.onNewKegCreation} />;
+      pageDisplay = <EmployeePage onNewKegCreation={this.props.onNewKegCreation}/>;
     } else {
       pageDisplay = <EmployeeLogin onEmployeeLoginSubmit={this.handleEmployeeLoginSubmit}/>;
     }
