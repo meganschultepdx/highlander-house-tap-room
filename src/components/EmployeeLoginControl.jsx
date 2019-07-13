@@ -1,4 +1,6 @@
 import React from 'react';
+import EmployeeLogin from './EmployeeLogin';
+import EmployeePage from './EmployeePage';
 
 class EmployeeLoginControl extends React.Component {
 

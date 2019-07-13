@@ -81,7 +81,7 @@ function EmployeeLogin(props) {
             <input required
               type='text'
               id="password" /><br />
-            <button id="loginButton" type='submit'>Login</button>
+            <button id="loginButton" onClick={props.onEmployeeLoginSubmit}>Login</button>
           </form>
         </div>
       </div>
