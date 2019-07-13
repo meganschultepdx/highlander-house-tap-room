@@ -20,56 +20,64 @@ class App extends React.Component {
           brewery: 'Highlander Taigh-grùdaidh',
           price: '5',
           abv: '5',
-          about: 'this Lager is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+          about: 'this Lager is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          id: '1'
         },
         {
           name: 'MacLeaod Märzen',
           brewery: 'Highlander Taigh-grùdaidh',
           price: '5',
           abv: '5.5',
-          about: 'This Marzen is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+          about: 'This Marzen is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          id: '2'
         },
         {
           name: 'Immortal IPA',
           brewery: 'Highlander Taigh-grùdaidh',
           price: '6',
           abv: '6',
-          about: 'this IPA is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+          about: 'this IPA is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          id: '3'
         },
         {
           name: 'Stab to the Heart Stout',
           brewery: 'Highlander Taigh-grùdaidh',
           price: '6',
           abv: '4.8',
-          about: 'this stout is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+          about: 'this stout is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          id: '4'
         },
         {
           name: 'Ramirez Red',
           brewery: 'Highlander Taigh-grùdaidh',
           price: '5',
           abv: '5',
-          about: 'this Red Ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+          about: 'this Red Ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          id: '5'
         },
         {
           name: 'Kurgan Kölsch',
           brewery: 'Highlander Taigh-grùdaidh',
           price: '5',
           abv: '4.5',
-          about: 'This Kolsch is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+          about: 'This Kolsch is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          id: '6'
         },
         {
           name: 'Quickening Quince Sour',
           brewery: 'Highlander Taigh-grùdaidh',
           price: '5',
           abv: '5.5',
-          about: 'this sour ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+          about: 'this sour ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          id: '7'
         },
         {
           name: 'Princes of the Universe Porter',
           brewery: 'Highlander Taigh-grùdaidh',
           price: '6',
           abv: '5',
-          about: '“This Porter is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+          about: '“This Porter is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          id: '8'
         }
       ]
     };

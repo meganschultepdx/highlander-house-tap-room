@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
 function TapList(props) {
+  console.log(props.tapList);
   return (
     <div>
       <style jsx>{`
@@ -45,6 +46,7 @@ function TapList(props) {
         }
         `}
       </style>
+
       <Title />
       <h1 id="taptitle">Welcome!</h1><br />
       <h2 id="tapSubtitle">Here are the kegs we currently have on tap:</h2>
