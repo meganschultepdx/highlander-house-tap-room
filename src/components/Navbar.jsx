@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import instagram from '../assets/img/instagram.png'
+
 
 
 function Navbar() {
@@ -33,10 +35,8 @@ function Navbar() {
           color: #00F
         }
 
-        #login-link {
-          padding-right: 20px;
-          display: react;
-          justify-contents: right;
+        #instagram {
+          float: right;
         }
 
       `}</style>

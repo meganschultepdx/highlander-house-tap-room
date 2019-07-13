@@ -1,5 +1,5 @@
 import React from 'react';
-import newlogosign from '../assets/img/newlogosign.png';
+import highlanderSign from '../assets/img/highlanderSign.png';
 import bar from '../assets/img/bar.jpg';
 
 function Title() {
@@ -27,7 +27,7 @@ function Title() {
       <div id="parent">
         <img id="bar" width="100%" height="auto" src={bar} alt="bar" />
         <div className="flex-container">
-          <img id="sign" width="60%" src={newlogosign} alt="highlander sign" />
+          <img id="sign" width="60%" src={highlanderSign} alt="highlander sign" />
         </div>
       </div>
     </div>
