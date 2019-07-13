@@ -9,7 +9,79 @@ import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 
-function App(){
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterTapList: [
+        {
+        name: 'Lambert Lager',
+        brand: 'Highlander Taigh-grùdaidh',
+        price: '5',
+        abv: '5',
+        about: 'this Lager is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      },
+      {
+        name: 'MacLeaod Märzen',
+        brand: 'Highlander Taigh-grùdaidh',
+        price: '5',
+        abv: '5.5',
+        about: 'This Marzen is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      },
+      {
+        name: 'Immortal IPA',
+        brand: 'Highlander Taigh-grùdaidh',
+        price: '6',
+        abv: '6',
+        about: 'this IPA is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      },
+      {
+        name: 'Stab to the Heart Stout',
+        brand: 'Highlander Taigh-grùdaidh',
+        price: '6',
+        abv: '4.8',
+        about: 'this stout is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      },
+      {
+        name: 'Ramirez Red',
+        brand: 'Highlander Taigh-grùdaidh',
+        price: '5',
+        abv: '5',
+        about: 'this Red Ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      },
+      {
+        name: 'Kurgan Kölsch',
+        brand: 'Highlander Taigh-grùdaidh',
+        price: '5',
+        abv: '4.5',
+        about: 'This Kolsch is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      },
+      {
+        name: 'Quickening Quince Sour',
+        brand: 'Highlander Taigh-grùdaidh',
+        price: '5',
+        abv: '5.5',
+        about: 'this sour ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      },
+      {
+        name: 'Princes of the Universe Porter',
+        brand: 'Highlander Taigh-grùdaidh',
+        price: '6',
+        abv: '5',
+        about: '“This Porter is Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+      },
+    ]
+    };
+    this.handleAddingNewKegToTapList = this.handleAddingNewKegToTapList.bind(this);
+  }
+  
+  handleAddingNewKegToTapList(newKeg) {
+    let newMasterTapList = this.state.masterTapList.slice();
+    newMasterTapList.push(newKeg);
+    this.setState({masterTapList: newMasterTapList});
+  }
+
   return (
     <div>
       <style jsx global>{`
@@ -22,7 +94,7 @@ function App(){
       <Navbar/>
       <Switch>
         <Route exact path='/' component={TapList} />
-        <Route path='/employeeLogin' component={EmployeeLoginControl} />
+        <Route path='/employeeLogin' render={()=><EmployeeLoginControl onNewKegCreation={this.handleAddingNewKegToTapList} />} />
         <Route path='/employeePage' component={EmployeePage} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
