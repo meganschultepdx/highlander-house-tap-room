@@ -1,5 +1,6 @@
 import React from 'react';
 import wood from '../assets/img/wood.jpg';
+import AddKegForm from './AddKegForm';
 
 
 function EmployeePage() {

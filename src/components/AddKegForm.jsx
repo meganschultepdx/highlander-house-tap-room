@@ -1,8 +1,28 @@
 import React from 'react';
 
-function EmployeePage() {
+function AddKegForm() {
+  let _name = null;
+  let _about = null;
+  let _brewery = null;
+  let _price = null;
+  let _abv = null;
+
+  function handleAddKegFromSubmission(event) {
+    event.preventDefault();
+    console.log(_name.value);
+    console.log(_about.value);
+    console.log(_brewery.value);
+    console.log(_price.value);
+    console.log(_abv.value);
+    _name.value='';
+    _about.value='';
+    _brewery.value='';
+    _price.value='';
+    _abv.value='';
+  }
+
   return (
-    <div>
+    <div className="flex-container">
       <style jsx>{`
         
         .flex-container {
@@ -66,44 +86,54 @@ function EmployeePage() {
         }
 
         `}</style>
-      <div className="flex-container">
-        <div id="keg-form">
-          <form>
-            <h1 id="form-title">Add or Edit a keg:  </h1>
-            <div id="keg-input">
-              <label>Name of Beer:  </label>
-              <input
-                type='text'
-                id="name" /><br />
 
-              <label>About this beer:  </label>
-              <textarea
-                type='text'
-                id="name" /><br />
+      <div id="keg-form">
+        <form onSubmit={handleAddKegFromSubmission}>
+          <h1 id="form-title">Add or Edit a keg:  </h1>
+          <div id="keg-input">
+            <label>Name of Beer:  </label>
+            <input
+              type='text'
+              id="name"
+              ref={(input) => {_name = input;}} /><br />
+              
 
-              <label>Brewery name:  </label>
-              <input
-                type='text'
-                id="brewery" /><br />
+            <label>About this beer:  </label>
+            <textarea
+              type='text'
+              id="about"
+              ref={(input) => {_about = input;}} /><br />
+              
 
-              <label>Price per pint:  </label>
-              <input
-                type='number'
-                id="price" /><br />
+            <label>Brewery name:  </label>
+            <input
+              type='text'
+              id="brewery" 
+              ref={(input) => {_brewery = input;}} /><br />
+              
 
-              <label>ABV:  </label>
-              <input
-                type='number' step='.1'
-                id="abv" /><br />
-            </div>
-            <div className="buttons">
-              <button className="button" type='submit'>Add Keg</button><br />
-            </div>
-          </form>
-        </div>
+            <label>Price per pint:  </label>
+            <input
+              type='number'
+              id="price" 
+              ref={(input) => {_price = input;}} /><br />
+              
+
+            <label>ABV:  </label>
+            <input
+              type='number' step='.1'
+              id="abv" 
+              ref={(input) => {_abv = input;}} /><br />
+              
+          </div>
+          <div className="buttons">
+            <button className="button" type='submit'>Add Keg</button><br />
+          </div>
+        </form>
+
       </div>
     </div>
   );
 }
 
-export default EmployeePage;
+export default AddKegForm;
