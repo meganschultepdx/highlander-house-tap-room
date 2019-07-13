@@ -2,7 +2,7 @@ import React from 'react';
 import wood from '../assets/img/wood.jpg';
 
 
-function AddEditKeg() {
+function employeePage() {
   return (
     <div id="employeeBackground">
       <style jsx>{`
