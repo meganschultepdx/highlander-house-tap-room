@@ -7,24 +7,23 @@ class EmployeeLoginControl extends React.Component {
     this.state = {
       employeePageVisible: false
     };
-  //   this.handleClick = this.handleClick.bind(this);
-  // }
+    this.handleEmployeeLoginSubmit = this.handleEmployeeLoginSubmit.bind(this);
+  }
 
-  // handleClick() {
-  //   this.setState({employeePageVisible: true});
-  //   console.log('employeePageVisible is currently set to:' + this.state.employeePageVisible);
-  // }
+  handleEmployeeLoginSubmit() {
+    this.setState({employeePageVisible: true});
+  }
 
   render(){
     let pageDisplay = null;
     if (this.state.employeePageVisible){
       pageDisplay = <EmployeePage />;
     } else {
-      pageDisplay = <EmployeeLogin />
+      pageDisplay = <EmployeeLogin onEmployeeLoginSubmit={this.handleEmployeeLoginSubmit}/>;
     }
     return (
       <div>
-        <EmployeeLogin />
+        {pageDisplay}
       </div>
     );
   }

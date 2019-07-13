@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import wood from '../assets/img/wood.jpg';
+import PropTypes from 'prop-types';
 
-function EmployeeLogin() {
+function EmployeeLogin(props) {
   return (
     <div id="loginBackground">
       <style jsx>{`
@@ -80,12 +81,16 @@ function EmployeeLogin() {
             <input required
               type='text'
               id="password" /><br />
-            <button id="loginButton" type='submit'><Link to="/EmployeePage">Login</Link></button>
+            <button id="loginButton" type='submit'>Login</button>
           </form>
         </div>
       </div>
     </div>
   );
+}
+
+EmployeeLogin.propTypes = {
+  onEmployeeLoginSubmit: PropTypes.func
 }
 
 export default EmployeeLogin;
