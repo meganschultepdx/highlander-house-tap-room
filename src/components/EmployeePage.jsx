@@ -1,9 +1,10 @@
 import React from 'react';
 import wood from '../assets/img/wood.jpg';
 import AddKegForm from './AddKegForm';
+import PropTypes from 'prop-types';
 
 
-function EmployeePage() {
+function EmployeePage(props) {
   return (
     <div id="employeeBackground">
       <style jsx>{`
@@ -32,10 +33,14 @@ function EmployeePage() {
         `}</style>
       <div className="flex-container">
         <h1 id="employeePageTitle">Employee Page</h1>
-        <AddKegForm />
+        <AddKegForm onNewKegCreation={props.onNewKegCreation}/>
       </div>
     </div>
   );
+}
+
+EmployeePage.propTypes= {
+  onNewKegCreation: PropTypes.func
 }
 
 export default EmployeePage;
