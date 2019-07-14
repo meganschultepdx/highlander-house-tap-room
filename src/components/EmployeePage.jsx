@@ -9,39 +9,53 @@ function EmployeePage(props) {
   return (
     <div id="employeeBackground">
       <style jsx>{`
-        #employeeBackground {
-          background-image: url(${wood});
-          background-size: cover;
-          background-repeat: repeat;
-        } 
+        
 
         .flex-container {
           display: flex;
-          justify-content: center;
+          flex-direction: column;
         }
 
         #employeePageTitle {
           font-family: sans-serif;
           text-align: center;
           color: grey;
-          padding: 80px 200px 100% 200px;
+          padding-top: 60px;
           font-weight: lighter;
           border: 1px solid rgb(0, 0, 0, 0);
           background-color: rgb(0, 0, 0, .6);
           text-transform: uppercase;
         }
 
+        #tapListTitle {
+          text-align: center;
+          font-weight: lighter;
+          font-family: sans-serif;
+          color: grey;
+          background-color: skyblue;
+        }
+
+      
+
         `}</style>
       <div className="flex-container">
-        <h1 id="employeePageTitle">Employee Page</h1>
-        <TapList childTapList={props.employeeTapList} />
-        <AddKegForm onNewKegCreation={props.onNewKegCreation}/>
+          <h1 id="employeePageTitle">Employee Page</h1>
+        <div id="tapListTitle">
+          <h2 style={{fontWeight: 'lighter', textTransform: 'uppercase'}}>Employee Tap List</h2>
+          <p style={{fontWeight: 'lighter'}}>Check the box next to each beer when you sell a pint to track keg fullness!</p>
+        </div>
+        <div id="employeeTapList">
+          <TapList childTapList={props.employeeTapList} />
+        </div>
+        <div id="addKegForm">
+          <AddKegForm onNewKegCreation={props.onNewKegCreation} />
+        </div>
       </div>
     </div>
   );
 }
 
-EmployeePage.propTypes= {
+EmployeePage.propTypes = {
   onNewKegCreation: PropTypes.func,
   employeeTapList: PropTypes.array,
   childTapList: PropTypes.array

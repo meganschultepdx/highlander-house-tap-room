@@ -35,12 +35,11 @@ function AddKegForm(props) {
             background-color: rgb(255, 255, 255, .4);;
             border-radius: 8px;
             border-radius: 8px;
-            z-index: 1;
-            top: 20%;
             position: absolute;
             font-weight: lighter;
             text-align: right;
-            margin-top: 80px;
+            margin-top: 40px;
+            margin-bottom: 80px;
         }
 
         #form-title {
