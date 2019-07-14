@@ -6,21 +6,14 @@ function Keg(props) {
     <div>
       <style jsx>{`
 
-        .flex-container {
-          display: flex;
-          justify-contents: center;
-        }
-
         .list {
           text-align: left;
           background-color: black;
           border: solid 1px rgb(89, 92, 90, .5);
           background-color: rgb(89, 92, 90, .5);
           border-radius: 4px;
-          width: 50%;
-          height: auto;
-          width: 2fr;
-          margin-left: 25%;
+          width: 300px;
+          height: 325px;
           margin-bottom: 20px;
         }
 
@@ -43,14 +36,14 @@ function Keg(props) {
           font-family: sans-serif;
           letter-spacing: 1px;
           padding-left: 10px;
+          padding-top: 10px;
         }
         
         `}</style>
 
       <div className="flex-container">
-        <div id="list"></div>
         <div className="list">
-          <h1 id="keg-name">{props.name}  -  ${props.price} per pint</h1>
+          <h1 id="keg-name">{props.name}  -  ${props.price} pint</h1>
           <div id="info-box">
             <h3>{props.about}</h3>
             <h3 id="brewery"><b>Brewed by:  </b> {props.brewery}</h3>
