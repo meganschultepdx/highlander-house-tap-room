@@ -22,7 +22,8 @@ function EmployeeTapList(props){
 }
 
 EmployeeTapList.propTypes = {
-  childTapList: PropTypes.array
+  childTapList: PropTypes.array,
+  tapList: PropTypes.array
 };
 
 export default EmployeeTapList;

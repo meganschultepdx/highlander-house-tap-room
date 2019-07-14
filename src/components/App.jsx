@@ -105,7 +105,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' render={() => <Home tapList={this.state.masterTapList} />} />
           <Route path='/employeeLogin' render={() => <EmployeeLoginControl onNewKegCreation={this.handleAddingNewKegToTapList}
-            tapList={this.state.masterTapList}
+          tapList={this.state.masterTapList}
           />} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />

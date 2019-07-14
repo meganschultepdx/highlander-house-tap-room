@@ -2,7 +2,7 @@ import React from 'react';
 import wood from '../assets/img/wood.jpg';
 import AddKegForm from './AddKegForm';
 import PropTypes from 'prop-types';
-
+import TapList from './TapList';
 
 
 function EmployeePage(props) {
@@ -34,7 +34,7 @@ function EmployeePage(props) {
         `}</style>
       <div className="flex-container">
         <h1 id="employeePageTitle">Employee Page</h1>
-        
+        <TapList childTapList={props.employeeTapList} />
         <AddKegForm onNewKegCreation={props.onNewKegCreation}/>
       </div>
     </div>
@@ -42,8 +42,9 @@ function EmployeePage(props) {
 }
 
 EmployeePage.propTypes= {
-  onNewKegCreation: PropTypes.func
- 
+  onNewKegCreation: PropTypes.func,
+  employeeTapList: PropTypes.array,
+  childTapList: PropTypes.array
 };
 
 export default EmployeePage;

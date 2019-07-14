@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 class EmployeeLoginControl extends React.Component {
 
   constructor(props) {
+    console.log(props);
     super(props);
     this.state = {
       employeePageVisible: false
@@ -14,16 +15,17 @@ class EmployeeLoginControl extends React.Component {
   }
 
   handleEmployeeLoginSubmit() {
-    this.setState({employeePageVisible: true});
+    this.setState({ employeePageVisible: true });
   }
 
-  render(){
+  render() {
     let pageDisplay = null;
-    if (this.state.employeePageVisible){
+    if (this.state.employeePageVisible) {
       pageDisplay = <EmployeePage onNewKegCreation={this.props.onNewKegCreation}
+        employeeTapList={this.props.tapList}
       />;
     } else {
-      pageDisplay = <EmployeeLogin onEmployeeLoginSubmit={this.handleEmployeeLoginSubmit}/>;
+      pageDisplay = <EmployeeLogin onEmployeeLoginSubmit={this.handleEmployeeLoginSubmit} />;
     }
     return (
       <div>
@@ -34,7 +36,9 @@ class EmployeeLoginControl extends React.Component {
 }
 
 EmployeeLoginControl.propTypes = {
-  onNewKegCreation: PropTypes.func
+  onNewKegCreation: PropTypes.func,
+  employeeTapList: PropTypes.array,
+  tapList: PropTypes.array
 };
 
 export default EmployeeLoginControl;
