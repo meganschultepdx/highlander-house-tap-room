@@ -4,7 +4,6 @@ import wood from '../assets/img/wood.jpg';
 import PropTypes from 'prop-types';
 
 function TapList(props) {
-  console.log(props);
   return (
     <div>
       <style jsx>{`
@@ -25,7 +24,7 @@ function TapList(props) {
       </style>
       <div id="woodbackground">
         <div id="top-spacer"></div>
-        {props.newTapList.map((keg) =>
+        {props.childTapList.map((keg) =>
           <Keg name={keg.name}
             brewery={keg.brewery}
             price={keg.price}
@@ -39,7 +38,7 @@ function TapList(props) {
 }
 
 TapList.propTypes = {
-  tapList: PropTypes.array
+  childTapList: PropTypes.array
 };
 
 export default TapList;

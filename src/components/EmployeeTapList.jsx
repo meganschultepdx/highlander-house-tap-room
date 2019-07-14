@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import TapList from './TapList';
 
 function EmployeeTapList(props){
+  console.log(props);
   return (
 
     <div>
@@ -15,13 +16,13 @@ function EmployeeTapList(props){
       </style>
       <h2 style={{color: 'white'}}>Employee Tap List</h2>
       <p style={{color: 'white'}}>Check the box next to each beer when you sell a pint to track keg fullness!</p>
-      <TapList tapList={props.tapList} />
+      <TapList childTapList={props.tapList} />
     </div>
   );
 }
 
 EmployeeTapList.propTypes = {
-  tapList: PropTypes.array
+  childTapList: PropTypes.array
 };
 
 export default EmployeeTapList;

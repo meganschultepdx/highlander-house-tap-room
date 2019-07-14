@@ -6,7 +6,6 @@ import Info from './Info';
 import PropTypes from 'prop-types';
 
 function Home(props) {
-  console.log(props);
   return (
     <div>
       <style jsx>{`
@@ -48,7 +47,7 @@ function Home(props) {
       <Title />
       <h1 id="taptitle">Welcome!</h1><br />
       <h2 id="tapSubtitle">Here are the beers we currently have on tap:</h2>
-      <TapList newTapList={props.tapList} />
+      <TapList childTapList={props.tapList} />
       <Info />
       <div id="spacer"></div>
     </div>
@@ -57,7 +56,6 @@ function Home(props) {
 
 Home.propTypes = {
   tapList: PropTypes.array,
-  masterTapList: PropTypes.array
 };
 
 export default Home;
