@@ -6,6 +6,8 @@ function EmployeeLogin(props) {
   return (
     <div id="loginBackground">
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Armata|Glegoo|Literata|Oswald:300,400&display=swap');
+
         #loginBackground {
           background-image: url(${wood});
           background-size: cover;
@@ -21,19 +23,20 @@ function EmployeeLogin(props) {
             z-index: 1;
             top: 22%;
             position: absolute;
-            margin-top: 50px;
+            margin-top: 70px;
             text-align: center;
         }
 
         #form-title {
             padding-left: 5px;
-            font-weight: lighter;
+            font-family: Armata;
         }
 
         label, input {
             padding: 5px;
             margin: 5px;
             margin-bottom: 10px;
+            font-family: oswald, sans-serif;
         }
 
         input {
@@ -44,14 +47,15 @@ function EmployeeLogin(props) {
         }
 
         #loginTitle {
-          font-family: sans-serif;
+          font-family: Armata,sans-serif;
           text-align: center;
-          color: grey;
+          color: #947a04;
           padding: 100px 20px 100% 20px;
           font-weight: lighter;
           border: 1px solid rgb(0, 0, 0, 0);
           background-color: rgb(0, 0, 0, .6);
           text-transform: uppercase;
+          margin-bottom: 20px;
         }
 
         #loginButton {
@@ -60,6 +64,8 @@ function EmployeeLogin(props) {
           border: 1px solid rgb(0, 0, 0, 0);
           border-radius: 8px;
           background-color: rgb(0, 0, 0, .8);
+          font-family: oswald, sans-serif;
+          color: grey;
         }
 
         .flex-container {

@@ -1,12 +1,9 @@
 import React from 'react';
 import Keg from './Keg';
-import Title from './Title';
 import wood from '../assets/img/wood.jpg';
-import Info from './Info';
 import PropTypes from 'prop-types';
 
 function TapList(props) {
-  console.log(props)
   return (
     <div>
       <style jsx>{`
@@ -16,26 +13,6 @@ function TapList(props) {
           background-repeat: repeat;
         } 
 
-        #taptitle {
-          color: #947a04;
-          font-family: sans-serif;
-          font-weight: lighter;
-          text-transform: uppercase;
-          text-align: center;
-          font-size: 2em;
-          margin-bottom: 0;
-        }
-
-        #tapSubtitle {
-          color: #947a04;
-          font-family: sans-serif;
-          font-weight: lighter;
-          text-transform: uppercase;
-          text-align: center;
-          font-size: 1.5em;
-          margin-top: 10px;
-        }
-
         #top-spacer {
           height: 20px;
         }
@@ -43,30 +20,40 @@ function TapList(props) {
         #spacer {
           padding-top: 70px;
         }
+
+        #tapListFormat {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin: 20px 40px 30px 40px;
+        }
         `}
       </style>
-      <Title />
-      <h1 id="taptitle">Welcome!</h1><br />
-      <h2 id="tapSubtitle">Here are the beers we currently have on tap:</h2>
       <div id="woodbackground">
         <div id="top-spacer"></div>
-        {props.tapList.map((keg) =>
-          <Keg name={keg.name}
-            brewery={keg.brewery}
-            price={keg.price}
-            abv={keg.abv}
-            about={keg.about}
-            key={keg.id} />
-        )}
-        <Info />
-        <div id="spacer"></div>
+        <div id="tapListFormat">
+          {props.childTapList.map((keg) =>
+            <Keg name={keg.name}
+              brewery={keg.brewery}
+              price={keg.price}
+              abv={keg.abv}
+              about={keg.about}
+              currentRouterPath={props.grandchildCurrentRouterPath}
+              key={keg.id}
+              onSellingPint={props.onSellingPint}
+              pintsLeft={keg.pintsLeft} />
+          )}
+        </div>
       </div>
     </div>
   );
 }
 
 TapList.propTypes = {
-  tapList: PropTypes.array
+  childTapList: PropTypes.array,
+  grandchildCurrentRouterPath: PropTypes.string,
+  onSellingPint: PropTypes.func
 };
 
 export default TapList;

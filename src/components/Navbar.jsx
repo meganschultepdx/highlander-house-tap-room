@@ -8,6 +8,8 @@ function Navbar() {
   return (
     <div>
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Armata|Glegoo|Literata|Nunito&display=swap');
+
         #navbar {
           display: inline;
           width: 100%;
@@ -26,7 +28,7 @@ function Navbar() {
           padding: 20px;
           text-transform: uppercase;
           color: darkgrey;
-          font-family: sans-serif;
+          font-family: Armata,sans-serif;
           letter-spacing: 1px;
           justify-contents: space-evenly;
         }
