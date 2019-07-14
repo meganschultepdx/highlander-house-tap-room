@@ -21,7 +21,7 @@ class EmployeeLoginControl extends React.Component {
     let pageDisplay = null;
     if (this.state.employeePageVisible){
       pageDisplay = <EmployeePage onNewKegCreation={this.props.onNewKegCreation}
-      tapList={this.state.masterTapList} />;
+      />;
     } else {
       pageDisplay = <EmployeeLogin onEmployeeLoginSubmit={this.handleEmployeeLoginSubmit}/>;
     }
@@ -34,8 +34,7 @@ class EmployeeLoginControl extends React.Component {
 }
 
 EmployeeLoginControl.propTypes = {
-  onNewKegCreation: PropTypes.func,
-  tapList: PropTypes.array
+  onNewKegCreation: PropTypes.func
 };
 
 export default EmployeeLoginControl;
