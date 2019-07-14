@@ -26,21 +26,22 @@ function TapList(props) {
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: space-evenly;
-          margin: 30px 30px 30px 30px;
+          margin: 20px 40px 30px 40px;
         }
         `}
       </style>
       <div id="woodbackground">
         <div id="top-spacer"></div>
         <div id="tapListFormat">
-        {props.childTapList.map((keg) =>
-          <Keg name={keg.name}
-            brewery={keg.brewery}
-            price={keg.price}
-            abv={keg.abv}
-            about={keg.about}
-            key={keg.id} />
-        )}
+          {props.childTapList.map((keg) =>
+            <Keg name={keg.name}
+              brewery={keg.brewery}
+              price={keg.price}
+              abv={keg.abv}
+              about={keg.about}
+              currentRouterPath={props.grandchildCurrentRouterPath}
+              key={keg.id} />
+          )}
         </div>
       </div>
     </div>
@@ -48,7 +49,8 @@ function TapList(props) {
 }
 
 TapList.propTypes = {
-  childTapList: PropTypes.array
+  childTapList: PropTypes.array,
+  grandchildCurrentRouterPath: PropTypes.string
 };
 
 export default TapList;

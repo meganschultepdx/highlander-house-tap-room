@@ -1,11 +1,11 @@
 import React from 'react';
-import wood from '../assets/img/wood.jpg';
 import AddKegForm from './AddKegForm';
 import PropTypes from 'prop-types';
 import TapList from './TapList';
 
 
 function EmployeePage(props) {
+  console.log(props.childCurrentRouterPath);
   return (
     <div id="employeeBackground">
       <style jsx>{`
@@ -44,7 +44,8 @@ function EmployeePage(props) {
           <p style={{ fontWeight: 'lighter' }}>Check the box next to each beer when you sell a pint to track keg fullness!</p>
         </div>
         <div id="employeeTapList">
-          <TapList childTapList={props.employeeTapList} />
+          <TapList childTapList={props.employeeTapList}
+          grandchildCurrentRouterPath={props.childCurrentRouterPath}/>
         </div>
         <div id="addKegForm">
           <AddKegForm onNewKegCreation={props.onNewKegCreation} />
@@ -57,7 +58,9 @@ function EmployeePage(props) {
 EmployeePage.propTypes = {
   onNewKegCreation: PropTypes.func,
   employeeTapList: PropTypes.array,
-  childTapList: PropTypes.array
+  childTapList: PropTypes.array,
+  childCurrentRouterPath: PropTypes.string,
+  grandchildCurrentRouterPath: PropTypes.string
 };
 
 export default EmployeePage;

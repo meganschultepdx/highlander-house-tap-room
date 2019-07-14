@@ -21,6 +21,7 @@ class App extends React.Component {
           price: 5,
           abv: 5,
           about: 'this Lager is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          pintsLeft: 124,
           id: '1'
         },
         {
@@ -29,6 +30,7 @@ class App extends React.Component {
           price: 5,
           abv: 5.5,
           about: 'This Marzen is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          pintsLeft: 124,
           id: '2'
         },
         {
@@ -37,6 +39,7 @@ class App extends React.Component {
           price: 5,
           abv: 6,
           about: 'this IPA is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          pintsLeft: 124,
           id: '3'
         },
         {
@@ -45,6 +48,7 @@ class App extends React.Component {
           price: 5,
           abv: 4.8,
           about: 'this stout is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          pintsLeft: 124,
           id: '4'
         },
         {
@@ -53,6 +57,7 @@ class App extends React.Component {
           price: 5,
           abv: 5,
           about: 'this Red Ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          pintsLeft: 124,
           id: '5'
         },
         {
@@ -61,6 +66,7 @@ class App extends React.Component {
           price: 5,
           abv: 4.5,
           about: 'This Kolsch is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          pintsLeft: 124,
           id: '6'
         },
         {
@@ -69,6 +75,7 @@ class App extends React.Component {
           price: 5,
           abv: 5.5,
           about: 'this sour ale is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          pintsLeft: 124,
           id: '7'
         },
         {
@@ -77,7 +84,17 @@ class App extends React.Component {
           price: 5,
           abv: 5,
           about: '“This Porter is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          pintsLeft: 122,
           id: '8'
+        },
+        {
+          name: 'Don\'t Lose Your Head Dunkel',
+          brewery: 'Highlander Taigh-grùdaidh',
+          price: 5,
+          abv: 6,
+          about: '“This Dunkel is Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+          pintsLeft: 122,
+          id: '9'
         }
       ]
     };
@@ -88,6 +105,11 @@ class App extends React.Component {
     let newMasterTapList = this.state.masterTapList.slice();
     newMasterTapList.push(newKeg);
     this.setState({ masterTapList: newMasterTapList });
+  }
+
+  handleSellingPint(keg) {
+    this.setState({ clicks: this.state.pintsLeft - 1 });
+    alert('pintsLeft is now: ' + this.state.masterTapList.pintsLeft);
   }
 
   render() {
@@ -103,8 +125,9 @@ class App extends React.Component {
         <Navbar />
         <Switch>
           <Route exact path='/' render={() => <Home tapList={this.state.masterTapList} />} />
-          <Route path='/employeeLogin' render={() => <EmployeeLoginControl onNewKegCreation={this.handleAddingNewKegToTapList}
+          <Route path='/employeeLogin' render={(props) => <EmployeeLoginControl onNewKegCreation={this.handleAddingNewKegToTapList}
             tapList={this.state.masterTapList}
+            currentRouterPath={props.location.pathname}
           />} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
