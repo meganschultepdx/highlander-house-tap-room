@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import TapList from './TapList';
+import Home from './Home';
 import EmployeeLoginControl from './EmployeeLoginControl';
 import About from './About';
 import Contact from './Contact';
@@ -103,13 +103,13 @@ class App extends React.Component {
         </style>
         <Navbar />
         <Switch>
-          <Route exact path='/' render={() => <TapList tapList={this.state.masterTapList} />} />
+          <Route exact path='/' render={() => <Home tapList={this.state.masterTapList} />} />
           <Route path='/employeeLogin' render={() => <EmployeeLoginControl onNewKegCreation={this.handleAddingNewKegToTapList}
             tapList={this.state.masterTapList}
           />} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
-          <Route path='/employeeTapList' render={()=><EmployeeTapList tapList={this.state.masterTapList} />} />
+          <Route path='/employeeTapList' render={() => <EmployeeTapList tapList={this.state.masterTapList} />} />
           <Route component={Error404} />
         </Switch>
         <Footer />
