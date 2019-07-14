@@ -31,18 +31,17 @@ function EmployeePage(props) {
           text-align: center;
           font-weight: lighter;
           font-family: sans-serif;
-          color: grey;
-          background-color: skyblue;
+          color: black;
+          background-color: grey;
         }
-
       
 
         `}</style>
       <div className="flex-container">
-          <h1 id="employeePageTitle">Employee Page</h1>
+        <h1 id="employeePageTitle">Employee Page</h1>
         <div id="tapListTitle">
-          <h2 style={{fontWeight: 'lighter', textTransform: 'uppercase'}}>Employee Tap List</h2>
-          <p style={{fontWeight: 'lighter'}}>Check the box next to each beer when you sell a pint to track keg fullness!</p>
+          <h2 style={{ fontWeight: 'lighter', textTransform: 'uppercase' }}>Employee Tap List</h2>
+          <p style={{ fontWeight: 'lighter' }}>Check the box next to each beer when you sell a pint to track keg fullness!</p>
         </div>
         <div id="employeeTapList">
           <TapList childTapList={props.employeeTapList} />

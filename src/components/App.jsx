@@ -109,7 +109,6 @@ class App extends React.Component {
           />} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
-          <Route path='/employeeTapList' render={() => <EmployeeTapList tapList={this.state.masterTapList} />} />
           <Route component={Error404} />
         </Switch>
         <Footer />
