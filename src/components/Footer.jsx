@@ -5,8 +5,10 @@ function Footer() {
   return (
     <div>
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Armata|Glegoo|Literata|Nunito&display=swap');
+
         #footer {
-          font-family: sans-serif;
+          font-family: Armata,sans-serif;
           letter-spacing: 1px;
           display: inline;
           text-align: center;

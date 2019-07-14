@@ -8,7 +8,7 @@ function EmployeePage(props) {
   return (
     <div id="employeeBackground">
       <style jsx>{`
-        
+        @import url('https://fonts.googleapis.com/css?family=Armata|Glegoo|Literata|Nunito&display=swap');
 
         .flex-container {
           display: flex;
@@ -16,9 +16,9 @@ function EmployeePage(props) {
         }
 
         #employeePageTitle {
-          font-family: sans-serif;
+          font-family: Armata,sans-serif;
           text-align: center;
-          color: grey;
+          color: #947a04;
           padding-top: 60px;
           font-weight: lighter;
           border: 1px solid rgb(0, 0, 0, 0);
@@ -28,8 +28,7 @@ function EmployeePage(props) {
 
         #tapListTitle {
           text-align: center;
-          font-weight: lighter;
-          font-family: sans-serif;
+          font-family: armata,sans-serif;
           color: black;
           background-color: grey;
         }

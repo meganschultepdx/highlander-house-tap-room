@@ -5,36 +5,39 @@ function Contact() {
   return (
     <div>
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Armata|Glegoo|Literata|Oswald:300,400&display=swap');
      
-      #parent {
-        position: relative;
-        margin-top: 40px;
-      }
- 
-      #contact {
-        z-index: 1;
-        position: absolute;
-        top: 10%;
-        left: 5%;
-        color: lightgrey;
-        font-family: sans-serif;
-        border: 1px solid rgb(255, 255, 255, 0);
-        border-radius: 8px;
-        background-color: rgb(255, 255, 255, .1);
-        padding: 30px;
-      }
+        #parent {
+          position: relative;
+          margin-top: 40px;
+        }
+  
+        #contact {
+          z-index: 1;
+          position: absolute;
+          top: 10%;
+          left: 5%;
+          color: lightgrey;
+          border: 1px solid rgb(255, 255, 255, 0);
+          border-radius: 8px;
+          background-color: rgb(255, 255, 255, .1);
+          padding: 30px;
+          margin-bottom: 40px;
+        }
 
-      .contactTitle {
-        text-transform: uppercase;
-        font-weight: lighter;
-        font-size: 2em;
-      }
+        .contactTitle {
+          text-transform: uppercase;
+          font-family: Armata,sans-serif;
+          font-size: 1.85em;
+        }
 
-      .contact {
-        font-weight: lighter;
-        padding-left: 20px;
-        font-size: 1.5em;
-      }
+        .contact {
+          font-weight: lighter;
+          padding-left: 25px;
+          padding-right: 25px;
+          font-size: 1.5em;
+          font-family: oswald,sans-serif;
+        }
 
       `}</style>
       <div id="parent">
@@ -48,6 +51,8 @@ function Contact() {
               Monday - Wednesday: 4pm - 11pm</h3>
             <h2 className="contactTitle">Email: </h2>
             <h3 className="contact">info@highlandertaphouse.com</h3>
+            <h2 className="contactTitle">Instagram: </h2>
+            <h3 className="contact">@highlandertaphouse</h3>
           </div>
         </div>
       </div>

@@ -9,6 +9,8 @@ function Home(props) {
   return (
     <div>
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Armata|Glegoo|Literata|Nunito&display=swap');
+
         #woodbackground {
           background-image: url(${wood});
           background-size: cover;
@@ -17,8 +19,7 @@ function Home(props) {
 
         #taptitle {
           color: #947a04;
-          font-family: sans-serif;
-          font-weight: lighter;
+          font-family: 'Armata',sans-serif;
           text-transform: uppercase;
           text-align: center;
           font-size: 2em;
@@ -27,7 +28,7 @@ function Home(props) {
 
         #tapSubtitle {
           color: #947a04;
-          font-family: sans-serif;
+          font-family: Armata;
           font-weight: lighter;
           text-transform: uppercase;
           text-align: center;

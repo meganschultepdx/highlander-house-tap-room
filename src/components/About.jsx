@@ -5,11 +5,11 @@ function About() {
   return (
     <div>
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Armata|Glegoo|Literata|Oswald:300,400&display=swap');
+      
         #about{
           color: darkgrey;
-          font-family: sans-serif;
           text-align; center;
-          font-weight: lighter;
           padding-top: 50px;
           width: 70%;
           margin-left: auto;
@@ -17,7 +17,17 @@ function About() {
         }
 
         #aboutTitle {
-          font-weight: lighter:
+          font-family: Armata,sans-serif;
+          text-align; center;
+          color: #947a04;
+        }
+
+        #aboutBody {
+          font-family: oswald,sans-serif;
+        }
+
+        #aboutBody2 {
+          font-family: oswald,sans-serif;
         }
 
         #castle {
@@ -26,9 +36,9 @@ function About() {
 
           `}</style>
       <div id="about">
-        <h1 style={{fontWeight: 'lighter'}} id="aboutTitle">About our Tap House and Brewery</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        <h1 style={{textAlign: 'center'}} id="aboutTitle">About our Tap House and Brewery</h1>
+        <p id="aboutBody">Inspired by the cult classic movie Highlander and our love for Scotland and it's rugged landscape, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p id="aboutBody2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         </p>
         <img id="castle" width="100%" height="auto" src={highlanderCastle} alt="castle"/>
       </div>

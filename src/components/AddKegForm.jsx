@@ -22,6 +22,7 @@ function AddKegForm(props) {
   return (
     <div className="flex-container">
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Armata|Oswald:300,400&display=swap');
         
         .flex-container {
           display: flex;
@@ -29,7 +30,7 @@ function AddKegForm(props) {
         }
 
         #keg-form {
-            font-family: sans-serif;
+            font-family: armata,sans-serif;
             width: 500px;
             border: 2px solid rgb(255, 255, 255, 0);
             background-color: rgb(255, 255, 255, .4);;
@@ -75,6 +76,7 @@ function AddKegForm(props) {
           width: 200px;
           font-size: 1em;
           color: lightgrey;
+          font-family: oswald, sand-serif;
         }
         
         .buttons {
