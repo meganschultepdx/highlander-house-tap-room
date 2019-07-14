@@ -6,7 +6,9 @@ import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
+import EmployeeTapList from './EmployeeTapList';
 import Error404 from './Error404';
+
 
 class App extends React.Component {
 
@@ -103,9 +105,11 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' render={() => <TapList tapList={this.state.masterTapList} />} />
           <Route path='/employeeLogin' render={() => <EmployeeLoginControl onNewKegCreation={this.handleAddingNewKegToTapList}
+            tapList={this.state.masterTapList}
           />} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
+          <Route path='/employeeTapList' render={()=><EmployeeTapList tapList={this.state.masterTapList} />} />
           <Route component={Error404} />
         </Switch>
         <Footer />

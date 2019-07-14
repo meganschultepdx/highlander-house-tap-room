@@ -6,6 +6,7 @@ import Info from './Info';
 import PropTypes from 'prop-types';
 
 function TapList(props) {
+  console.log(props)
   return (
     <div>
       <style jsx>{`
@@ -44,10 +45,9 @@ function TapList(props) {
         }
         `}
       </style>
-
       <Title />
       <h1 id="taptitle">Welcome!</h1><br />
-      <h2 id="tapSubtitle">Here are the kegs we currently have on tap:</h2>
+      <h2 id="tapSubtitle">Here are the beers we currently have on tap:</h2>
       <div id="woodbackground">
         <div id="top-spacer"></div>
         {props.tapList.map((keg) =>
