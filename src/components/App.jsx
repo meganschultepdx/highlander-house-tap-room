@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './Navbar';
 import TapList from './TapList';
 import EmployeeLoginControl from './EmployeeLoginControl';
-{/*import EmployeePage from './EmployeePage';*/ }
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -103,8 +102,8 @@ class App extends React.Component {
         <Navbar />
         <Switch>
           <Route exact path='/' render={() => <TapList tapList={this.state.masterTapList} />} />
-          <Route path='/employeeLogin' render={() => <EmployeeLoginControl onNewKegCreation={this.handleAddingNewKegToTapList} />} />
-          {/*<Route path='/employeePage' component={EmployeePage} />*/}
+          <Route path='/employeeLogin' render={() => <EmployeeLoginControl onNewKegCreation={this.handleAddingNewKegToTapList}
+          tapList={this.state.masterTapList} />} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
           <Route component={Error404} />
