@@ -5,7 +5,6 @@ import TapList from './TapList';
 
 
 function EmployeePage(props) {
-  console.log(props.childCurrentRouterPath);
   return (
     <div id="employeeBackground">
       <style jsx>{`
@@ -45,7 +44,8 @@ function EmployeePage(props) {
         </div>
         <div id="employeeTapList">
           <TapList childTapList={props.employeeTapList}
-          grandchildCurrentRouterPath={props.childCurrentRouterPath}/>
+            grandchildCurrentRouterPath={props.childCurrentRouterPath}
+            onSellingPint={props.onSellingPint} />
         </div>
         <div id="addKegForm">
           <AddKegForm onNewKegCreation={props.onNewKegCreation} />
@@ -60,7 +60,8 @@ EmployeePage.propTypes = {
   employeeTapList: PropTypes.array,
   childTapList: PropTypes.array,
   childCurrentRouterPath: PropTypes.string,
-  grandchildCurrentRouterPath: PropTypes.string
+  grandchildCurrentRouterPath: PropTypes.string,
+  onSellingPint: PropTypes.func
 };
 
 export default EmployeePage;

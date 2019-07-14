@@ -22,8 +22,9 @@ class EmployeeLoginControl extends React.Component {
     let pageDisplay = null;
     if (this.state.employeePageVisible) {
       pageDisplay = <EmployeePage onNewKegCreation={this.props.onNewKegCreation}
-      employeeTapList={this.props.tapList}
-      childCurrentRouterPath={this.props.currentRouterPath}
+        employeeTapList={this.props.tapList}
+        childCurrentRouterPath={this.props.currentRouterPath}
+        onSellingPint={this.props.onSellingPint}
       />;
     } else {
       pageDisplay = <EmployeeLogin onEmployeeLoginSubmit={this.handleEmployeeLoginSubmit}
@@ -42,7 +43,8 @@ EmployeeLoginControl.propTypes = {
   employeeTapList: PropTypes.array,
   tapList: PropTypes.array,
   currentRouterPath: PropTypes.string,
-  childCurrentRouterPath: PropTypes.string
+  childCurrentRouterPath: PropTypes.string,
+  onSellingPint: PropTypes.func
 };
 
 export default EmployeeLoginControl;

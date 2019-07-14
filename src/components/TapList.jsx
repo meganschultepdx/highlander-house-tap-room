@@ -40,7 +40,9 @@ function TapList(props) {
               abv={keg.abv}
               about={keg.about}
               currentRouterPath={props.grandchildCurrentRouterPath}
-              key={keg.id} />
+              key={keg.id}
+              onSellingPint={props.onSellingPint}
+              pintsLeft={keg.pintsLeft} />
           )}
         </div>
       </div>
@@ -50,7 +52,8 @@ function TapList(props) {
 
 TapList.propTypes = {
   childTapList: PropTypes.array,
-  grandchildCurrentRouterPath: PropTypes.string
+  grandchildCurrentRouterPath: PropTypes.string,
+  onSellingPint: PropTypes.func
 };
 
 export default TapList;

@@ -99,6 +99,7 @@ class App extends React.Component {
       ]
     };
     this.handleAddingNewKegToTapList = this.handleAddingNewKegToTapList.bind(this);
+    this.handleSellingPint = this.handleSellingPint.bind(this);
   }
 
   handleAddingNewKegToTapList(newKeg) {
@@ -107,9 +108,16 @@ class App extends React.Component {
     this.setState({ masterTapList: newMasterTapList });
   }
 
-  handleSellingPint(keg) {
-    this.setState({ clicks: this.state.pintsLeft - 1 });
-    alert('pintsLeft is now: ' + this.state.masterTapList.pintsLeft);
+  handleSellingPint(id) {
+    let pintCountMasterKegList = this.state.masterKegList;
+    if (pintCountMasterKegList[id].pintsLeft > 0) {
+      pintCountMasterKegList[id].pints--;
+    } else if (pintCountMasterKegList[id].pintsLeft === 0 ) {
+      'Keg is empty!';
+    } else {
+      pintCountMasterKegList;
+    }
+    this.setState(this.state.masterTapList[id]);
   }
 
   render() {
@@ -128,6 +136,7 @@ class App extends React.Component {
           <Route path='/employeeLogin' render={(props) => <EmployeeLoginControl onNewKegCreation={this.handleAddingNewKegToTapList}
             tapList={this.state.masterTapList}
             currentRouterPath={props.location.pathname}
+            onSellingPint={this.handleSellingPint}
           />} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
