@@ -113,12 +113,10 @@ class App extends React.Component {
     let pintCountMasterKegList = this.state.masterKegList[id];
     if (pintCountMasterKegList[id].pintsLeft > 0) {
       pintCountMasterKegList[id].pints--;
-    } else if (pintCountMasterKegList[id].pintsLeft === 0) {
-      'Keg is empty!';
     } else {
-      this.setState({ masterKegList: pintCountMasterKegList });
+      pintCountMasterKegList[id].pints = 'Keg is empty!';
     }
-    
+    this.setState({ masterKegList: pintCountMasterKegList });
   }
 
   render() {
