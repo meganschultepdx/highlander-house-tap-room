@@ -14,7 +14,7 @@
 
 ## Component Tree/Project Planning
 
-![](src/assets/img/newcomptree.jpg)
+![](src/assets/img/latestcomptree.jpg)
 
 ## Features
 
@@ -27,10 +27,12 @@ Below are the current features worked on today and the features that are planned
     - click on "Employee Login "in navbar to route to fake employee login page
     - click on "About" in footer to route to about page
     - click on Home to route back home from other pages.
+    - click on Contact to route to page with Contact info.
     - Navbar and its links to show on every "page" or when other components are displayed.
-  - List of Kegs that is a kegList component that holds a hard-coded list of current kegs and uses a child kegs component to display each individual keg.
-* Employee Login page has fake login form but 'login" button routes you to Add/edit keg page.
-* Add/Edit keg component page has form that allows employees to add/edit current kegs.
+  - List of Kegs that is a kegList component that holds a hard-coded list of current kegs and uses a child kegs component to display each individual keg. You can also navigate through EmloyeeLogin page to EmployeePage to add new kegs to the list.
+* Employee Login page has fake login form but 'login" button routes you to Employee Page.
+* Employee page displays employee keg list that reuses KegList and Keg components but uses conditional path display to show number of pints left and sold pint button that has an event listener to decrement total pints.
+* Employee page also renders AddKeg comp that allows user to add new keg tot this list.
 * styling with css modules and webpack bundled images
 
 
