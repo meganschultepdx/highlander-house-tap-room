@@ -109,7 +109,6 @@ class App extends React.Component {
   }
 
   handleSellingPint(keg) {
-    console.log(id);
     let pintCountMasterKegList = this.state.masterKegList[id];
     if (pintCountMasterKegList[id].pintsLeft > 0) {
       pintCountMasterKegList[id].pints--;
