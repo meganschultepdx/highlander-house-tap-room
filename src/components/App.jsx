@@ -108,14 +108,15 @@ class App extends React.Component {
     this.setState({ masterTapList: newMasterTapList });
   }
 
-  handleSellingPint(keg) {
-    let pintCountMasterKegList = this.state.masterKegList[id];
-    if (pintCountMasterKegList[id].pintsLeft > 0) {
-      pintCountMasterKegList[id].pints--;
+  handleSellingPint(idex) {
+    console.log(idex);
+    let pintCountMasterTapList = this.state.masterTapList;
+    if (pintCountMasterTapList[index].pintsLeft > 0) {
+      pintCountMasterTapList[index].pintsLeft--;
     } else {
-      pintCountMasterKegList[id].pints = 'Keg is empty!';
+      pintCountMasterTapList[index].pintsLeft = 'Keg is empty!';
     }
-    this.setState({ masterKegList: pintCountMasterKegList });
+    this.setState({ masterTapList: pintCountMasterTapList });
   }
 
   render() {
