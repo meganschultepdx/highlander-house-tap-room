@@ -33,7 +33,7 @@ function TapList(props) {
       <div id="woodbackground">
         <div id="top-spacer"></div>
         <div id="tapListFormat">
-          {props.childTapList.map((keg) =>
+          {props.childTapList.map((keg, index) =>
             <Keg name={keg.name}
               brewery={keg.brewery}
               price={keg.price}
@@ -42,7 +42,8 @@ function TapList(props) {
               currentRouterPath={props.grandchildCurrentRouterPath}
               key={keg.id}
               onSellingPint={props.onSellingPint}
-              pintsLeft={keg.pintsLeft} />
+              pintsLeft={keg.pintsLeft}
+              index={index} />
           )}
         </div>
       </div>

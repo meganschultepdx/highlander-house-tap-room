@@ -55,7 +55,7 @@ function Keg(props) {
         <div className="flex-container">
           <div className="list">
             <div id="info-box">
-              <h1 id="keg-name">{props.name}  -  ${props.price} pint <button id="pintsLeftButton" onClick={() => {props.onSellingPint(index);}}>Pint Sold</button> <span style={{ fontSize: '.5em'}}>pints left: {props.pintsLeft}</span></h1>
+              <h1 id="keg-name">{props.name}  -  ${props.price} pint <button id="pintsLeftButton" onClick={() => {props.onSellingPint(props.index);}}>Pint Sold</button> <span style={{ fontSize: '.5em'}}>pints left: {props.pintsLeft}</span></h1>
               <h3>{props.about}</h3>
               <h3 id="brewery"><b>Brewed by:  </b> {props.brewery}</h3>
               <h3 id="abv"><b>ABV:  </b>{props.abv}%</h3>
@@ -139,6 +139,7 @@ Keg.propTypes = {
   currentRouterPath: PropTypes.string,
   onSellingPint: PropTypes.func,
   pintsLeft: PropTypes.number,
+  index: PropTypes.number
 };
 
 export default Keg;

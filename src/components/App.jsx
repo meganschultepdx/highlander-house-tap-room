@@ -108,8 +108,8 @@ class App extends React.Component {
     this.setState({ masterTapList: newMasterTapList });
   }
 
-  handleSellingPint(idex) {
-    console.log(idex);
+  handleSellingPint(index) {
+    console.log(index);
     let pintCountMasterTapList = this.state.masterTapList;
     if (pintCountMasterTapList[index].pintsLeft > 0) {
       pintCountMasterTapList[index].pintsLeft--;
