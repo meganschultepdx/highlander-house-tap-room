@@ -17,6 +17,7 @@ This web application is designed to be both a tap room beer list for customers a
 
 ![](src/assets/img/web2.png)
 ![](src/assets/img/web3.png)
+![](src/assets/img/web1.png)
 ![](src/assets/img/web4.png)
 ![](src/assets/img/web5.png)
 ![](src/assets/img/web6.png)
