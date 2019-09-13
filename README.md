@@ -13,7 +13,7 @@ This web application is designed to be both a tap room beer list for customers a
 - Run \$npm start to open project on Local Server.
 - Navigate to localhost:8080 in Google Chrome.
 
-## Component Tree/Project Planning
+## Screen Shots of running project
 
 ![](src/assets/img/web2.png)
 ![](src/assets/img/web3.png)
