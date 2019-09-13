@@ -8,9 +8,9 @@
 
 ## Setup/Installation Requirements
 * clone project from https://github.com/meganschultepdx/highlander-tap-house.
-* Run npm install from with in root directory to install necessary packages.
-* Run ng run start --open to open project on Local Server.
-* Project will automatically open in Chrome browser at localhost:8080
+* Run $npm install from with in root directory to install necessary packages.
+* Run $npm start to open project on Local Server.
+* Navigate to localhost:8080 in Google Chrome.
 
 ## Component Tree/Project Planning
 
