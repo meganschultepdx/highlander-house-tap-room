@@ -14,7 +14,7 @@
 
 ## Component Tree/Project Planning
 
-![](src/assets/img/latestcomptree.jpg)
+![](src/assets/Highlander Tap House copy.mov)
 
 ## Features
 
